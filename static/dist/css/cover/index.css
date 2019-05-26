@@ -274,6 +274,70 @@ body {
   background: url('../../img/new/content.png') center center no-repeat;
   background-size: cover; */
 }
+.data_show{
+	background-color: rgba(0,0,0,0);
+	display: flex;
+}
+.data_show .l{
+	flex: 1;
+	margin-right: 15px;
+}
+.data_show .m{
+	flex: 2;
+	margin-right: 15px;
+}
+.data_show .r{
+	flex: 1;
+	margin-right: 15px;
+}
+.data_show .mb15{
+	margin-bottom: 30px;
+	padding: 0 15px;
+}
+.data_show .data_show_box{
+	background: rgba(31,101,192,0.10);
+	border: 1px solid #0696D7;
+	box-shadow: 0 4px 16px 0 rgba(11,3,6,0.75), inset 0 0 20px 0 rgba(98,193,249,0.50);
+}
+.data_show_title{
+	font-family: MicrosoftYaHei;
+	font-size: 16px;
+	color: #62C1F9;
+	letter-spacing: 1.6px;
+	margin-bottom: 8px;
+}
+.data_show .cart_title{
+	font-family: MicrosoftYaHei;
+	font-size: 18px;
+	color: #62C1F9;
+	letter-spacing: 0;
+	text-align: center;
+	vertical-align: bottom;
+	padding-top: 20px;
+}
+.data_show .cart_title span{
+	margin-right: 60px;
+}
+.data_show .cart_title span:last-child{
+	margin-right: 0;
+}
+.data_show .cart_title i{
+	font-style: normal;
+	font-family: Helvetica;
+	font-size: 60px;
+	color: #F16647;
+	letter-spacing: 0;
+	text-align: center;
+	line-height: 72px;
+}
+.data_show_letter_title{
+	font-family: PingFang-SC-Bold;
+	font-size: 16px;
+	color: #CCCCCC;
+	letter-spacing: 0;
+	text-align: center;
+	margin-top: -40px;
+}
 /* 头部改写 end */
 
 /* 弹框 */
