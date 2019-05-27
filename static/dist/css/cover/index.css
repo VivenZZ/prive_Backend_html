@@ -377,7 +377,7 @@ body {
 /* 头部改写 end */
 
 /* 弹框 */
-/* .modal-content{
+.modal-content{
   background: #273A60;
   border: 1px solid #0696D7;
   box-shadow: 0 4px 16px 0 rgba(11,3,6,0.75), inset 0 0 20px 0 rgba(98,193,249,0.50);
@@ -391,15 +391,34 @@ body {
 }
 .modal-title{
   font-family: PingFang-SC-Bold;
-font-size: 18px;
-color: #62C1F9;
-letter-spacing: 1.8px;
+	font-size: 18px;
+	color: #62C1F9;
+	letter-spacing: 1.8px;
 }
 .modal-header{
   border-bottom: 1px solid #62C1F9;
 }
 .modal-footer{
-  border-top: 1px solid #62C1F9;
+	border-top: 1px solid #62C1F9;
+	text-align: left;
+	padding: 15px 0;
+}
+.modal-footer .btn_add{
+	background: #2E3A62;
+	border: 1px solid #38E893;
+	font-family: PingFangSC-Regular;
+	font-size: 16px;
+	color: #38E893;
+	letter-spacing: 1.6px;
+}
+.modal-footer .btn_cancel{
+	background: #2E3A62;
+	border: 1px solid #0695D7;
+	font-family: PingFangSC-Regular;
+	font-size: 16px;
+	color: #62C1F9;
+	letter-spacing: 1.6px;
+	margin-left: 18px !important;
 }
 .form-group label{
   font-family: PingFang-SC-Bold;
@@ -409,10 +428,10 @@ letter-spacing: 1.6px;
 }
 .form-control{
   background: rgba(47,35,71,0.62);
-border: 1px solid #62C1F9;
-font-family: PingFangSC-Regular;
-font-size: 16px;
-color: #FFFFFF;
-letter-spacing: 1.6px;
-} */
+	border: 1px solid #62C1F9;
+	font-family: PingFangSC-Regular;
+	font-size: 16px;
+	color: #FFFFFF;
+	letter-spacing: 1.6px;
+}
 /* 弹框 end */
