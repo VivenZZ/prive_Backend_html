@@ -186,7 +186,9 @@
             </div>
             <div class="r">
                 <p class="data_show_title">物业统计-保修统计</p>
-                <div id="main5" class="data_show_box mb15" style="width: 100%;height:340px;padding: 0 56px;"></div>
+                <div class="data_show_box mb15" style="width: 100%;height:340px;padding: 80px 56px;">
+                    <div id="main5" class=" stripe_bg" style="width: 100%;height:240px;"></div>
+                </div>
                 <p class="data_show_title">物业统计-安防设备</p>
                 <div class="data_show_box">
                     <div id="main6" style="width: 100%;height:236px;"></div>
@@ -393,14 +395,14 @@
                         normal: {
                             // 定制显示（按顺序）
                             color: function (params) {
-                                var colorList = ['#03F5FC ', 'rgba(0,0,0,0)'];
+                                var colorList = ['rgba(0,0,0,0)', '#03F5FC '];
                                 return colorList[params.dataIndex]
                             }
                         },
                     },
                     data: [
-                        { value: 70, name: '直接访问' },
-                        { value: 30, name: '邮件营销' },
+                        { value: 25, name: '直接访问' },
+                        { value: 75, name: '邮件营销' },
                     ]
                 }
             ]
@@ -435,14 +437,14 @@
                         normal: {
                             // 定制显示（按顺序）
                             color: function (params) {
-                                var colorList = ['#03F5FC ', 'rgba(0,0,0,0)'];
+                                var colorList = ['rgba(0,0,0,0)', '#03F5FC '];
                                 return colorList[params.dataIndex]
                             }
                         },
                     },
                     data: [
-                        { value: 70, name: '直接访问' },
-                        { value: 30, name: '邮件营销' },
+                        { value: 25, name: '直接访问' },
+                        { value: 75, name: '邮件营销' },
                     ]
                 }
             ]
@@ -581,17 +583,19 @@
                         show: true,
                         textStyle: {
                             fontSize: 14,     //更改坐标轴文字大小
-                            lineHeight: 20,
+                            lineHeight: 26,
                         },
                     }
                 }
             ],
             yAxis: [
                 {
-                    show:true,
-                    axisLine: { show: false },
+                    show: false,
+                    axisLine: {
+                        show: true,
+                    },
                     type: 'value',
-                    splitLine: { show: true, lineStyle: { type: 'solid' } },
+                    splitLine: { show: true, lineStyle: { type: 'solid' } }
                 }
             ],
             series: [
@@ -608,7 +612,7 @@
                             }
                         },
                     },
-                    data: [30,58]
+                    data: [30, 58]
                 }
             ]
         };
@@ -643,14 +647,14 @@
                         normal: {
                             // 定制显示（按顺序）
                             color: function (params) {
-                                var colorList = ['#03F5FC ', 'rgba(0,0,0,0)'];
+                                var colorList = ['rgba(0,0,0,0)', '#03F5FC '];
                                 return colorList[params.dataIndex]
                             }
                         },
                     },
                     data: [
-                        { value: 70, name: '直接访问' },
-                        { value: 30, name: '邮件营销' },
+                        { value: 25, name: '直接访问' },
+                        { value: 75, name: '邮件营销' },
                     ]
                 }
             ]
@@ -684,14 +688,14 @@
                         normal: {
                             // 定制显示（按顺序）
                             color: function (params) {
-                                var colorList = ['#03F5FC ', 'rgba(0,0,0,0)'];
+                                var colorList = ['rgba(0,0,0,0)', '#03F5FC '];
                                 return colorList[params.dataIndex]
                             }
                         },
                     },
                     data: [
-                        { value: 70, name: '直接访问' },
-                        { value: 30, name: '邮件营销' },
+                        { value: 25, name: '直接访问' },
+                        { value: 75, name: '邮件营销' },
                     ]
                 }
             ]
