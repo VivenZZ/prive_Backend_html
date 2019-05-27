@@ -342,6 +342,38 @@ body {
 	background:linear-gradient(rgba(204,204,204,0.10) 50%, rgba(0,0,0,0) 50%);
 	background-size: 100% 33.3333%;
 }
+.data_show_box .tl{
+	position: absolute; 
+	top: 0; left: 0; 
+	padding: 6px;
+	border-style: solid;
+	border-color: #0696D7;
+	border-width: 2px 0 0 2px;
+}
+.data_show_box .tr{
+	position: absolute; 
+	top: 0; right: 0; 
+	padding: 6px;
+	border-style: solid;
+	border-color: #0696D7;
+	border-width: 2px 2px 0 0;
+}
+.data_show_box .bl{
+	position: absolute; 
+	bottom: 0; left: 0; 
+	padding: 6px;
+	border-style: solid;
+	border-color: #0696D7;
+	border-width: 0 0 2px 2px;
+}
+.data_show_box .br{
+	position: absolute; 
+	bottom: 0; right: 0; 
+	padding: 6px;
+	border-style: solid;
+	border-color: #0696D7;
+	border-width: 0 2px 2px 0;
+}
 /* 头部改写 end */
 
 /* 弹框 */
