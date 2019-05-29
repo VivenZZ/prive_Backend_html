@@ -431,16 +431,13 @@ body {
 	display: flex;
 }
 .data_show .l{
-	flex: 1;
 	margin-right: 15px;
 }
 .data_show .m{
-	flex: 3;
 	margin-right: 15px;
 	flex-shrink: 0;
 }
 .data_show .r{
-	flex: 1;
 	margin-right: 15px;
 }
 .data_show .mb15{
@@ -592,7 +589,44 @@ body {
 	overflow: hidden;
 	padding-bottom: 30px;
 }
+
+/* 首页 */
 .data_show .l,
+.data_show .m,
+.data_show .r
+{
+	float: left;
+}
+
+.data_show .l,
+.data_show .r{
+	width: 20%;
+}
+.data_show .m{
+	width: 60%;
+}
+.data_show .l .data_show_box1,
+.data_show .r .data_show_box5{
+	height: 30%;
+}
+.data_show .l .data_show_box2,
+.data_show .r .data_show_box6{
+	height: 56%;
+}
+.data_show .l .data_show_box2 div,
+.data_show .r .data_show_box6 div{
+	height: 40%;;
+}
+.data_show .m .data_show_box4 {
+	height: 72%;;
+}
+#main1,
+#main4,
+#main5{
+	height: 100%;
+	margin-top: 15px;
+}
+/* .data_show .l,
 .data_show .m,
 .data_show .r
 {
@@ -628,7 +662,7 @@ body {
 #main5{
 	height: 100%;
 	margin-top: 15px;
-}
+} */
 .modal-body{
 	font-size: 14px;
 	color: #fff;
