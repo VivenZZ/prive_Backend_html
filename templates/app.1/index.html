@@ -270,7 +270,7 @@
 
     <script>
         $(function () {
-            let currUrl = document.location.pathname;
+            var currUrl = document.location.pathname;
             console.log(currUrl);
             $.ajax({
                 url: "/system/resourcePage",
@@ -281,10 +281,10 @@
                     if (d.code !== "200") {
                         alert(d.message);
                     }
-                    let data = d.data;
-                    let preData = [];
-                    let cData = [];
-                    for (let i = 0; i < data.length; i++) {
+                    var data = d.data;
+                    var preData = [];
+                    var cData = [];
+                    for (var i = 0; i < data.length; i++) {
                         if (data[i].resParentId === 0) {
                             preData.push(data[i]);
                         } else {
@@ -292,15 +292,15 @@
                         }
                     }
 
-                    let html = [];
+                    var html = [];
                     html.push('<li class="header">MAIN NAVIGATION</li>')
-                    for (let i = 0; i < preData.length; i++) {
-                        let htmlEnum = [];
+                    for (var i = 0; i < preData.length; i++) {
+                        var htmlEnum = [];
                         htmlEnum.push(" <ul class=\"treeview-menu\">");
-                        let active = false;
-                        for (let j = 0; j < cData.length; j++) {
+                        var active = false;
+                        for (var j = 0; j < cData.length; j++) {
                             if (cData[j].resParentId == preData[i].id) {
-                                let css = "";
+                                var css = "";
                                 if (cData[j].resUrl === currUrl) {
                                     css = "active";
                                     active = true;
@@ -327,7 +327,7 @@
                         html.push("</li>\n")
                     }
 
-                    let a = html.join("");
+                    var a = html.join("");
                     $("#menu").html(a);
 
                 }
@@ -346,11 +346,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/4.2.1/echarts-en.common.js"></script>
     <script type="text/javascript">
-        $(function(){
-            var box1H = $(".data_show_box1").innerHeight()
-            $("#main1").height(box1H)
-            console.log(box1H)
-        })
         // 第一个
         var myChart1 = echarts.init(document.getElementById('main1'), 'dark');
         var option1 = {
@@ -551,7 +546,7 @@
                     data: (function () {
                         var arr = [10, 52, 200, 334, 390, 330, 220]
                         var newArr =[]
-                        for (let index = 0; index < arr.length; index++) {
+                        for (var index = 0; index < arr.length; index++) {
                             newArr.push(arr[index]/4)
                         }
                         return newArr
