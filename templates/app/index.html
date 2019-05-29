@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html style="height: auto; min-height: 100%;">
 
 <head>
@@ -164,11 +165,7 @@
         <div class="content-wrapper" style="min-height: 878px;">
             <!-- Content Header (Page header) -->
             <section class="content-header">
-                <h1>App管理</h1>
-                <ol class="breadcrumb">
-                    <li><a href="#"><i class="fa fa-dashboard">基本信息</i> </a></li>
-                    <li class="active">App管理</li>
-                </ol>
+                <h1>供应商管理</h1>
             </section>
             <!-- Main content -->
             <section class="content">
@@ -178,19 +175,25 @@
                             <div class="pull-left">
                                 <form class="form-inline">
                                     <div class="form-group">
-                                        <label for="name">App名称&nbsp;</label>
-                                        <input type="text" id="name" name="name" class="form-control"
-                                            placeholder="App名称">
+                                        <label for="name">供应商管理&nbsp;</label>
+                                        <input type="text" id="name" name="name" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="name">联系人&nbsp;</label>
+                                        <input type="text" id="name" name="name" class="form-control">
                                     </div>
                                 </form>
                             </div>
                             <div class="pull-right">
-                                <a href="javascript:;" id="btnSearch" class="btn btn-default btn-sm" type="button"><i
-                                        class="fa fa-search"></i>&nbsp;搜 索</a>
-                                <a href="javascript:;" func="btnAdd" class="btn btn-default btn-sm"><i
-                                        class="fa fa-plus"></i>&nbsp;新 增</a>
-                                <a href="javascript:;" func="btnBatchDelete" class="btn btn-default btn-sm"><i
-                                        class="fa fa-trash-o"></i>&nbsp;批量删除</a>
+                                <a href="javascript:;" id="btnSearch" class="btn_search btn btn-default btn-sm" type="button">
+                                    <img src="../../static/dist/img/new/search.png" alt="" srcset=""> 查 询
+                                </a>
+                                <a href="javascript:;" func="btnAdd" class="btn_add btn btn-default btn-sm">
+                                    <img src="../../static/dist/img/new/add.png" alt="" srcset="">新 增
+                                </a>
+                                <a href="javascript:;" func="btnBatchDelete" class="btn_del btn btn-default btn-sm">
+                                    <img src="../../static/dist/img/new/del.png" alt="" srcset="">删 除
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -207,117 +210,43 @@
                                         width="100%" role="grid" aria-describedby="datalist_info" style="width: 100%;">
                                         <thead>
                                             <tr role="row">
-                                                <th width="50" class="sorting_disabled" rowspan="1" colspan="1"
+                                                <th class="sorting_disabled" rowspan="1" colspan="1"
                                                     style="width: 13px;"><input id="selectAll" type="checkbox"></th>
                                                 <th class="sorting_disabled" rowspan="1" colspan="1"
-                                                    style="width: 47px;">App名称</th>
-                                                <th width="120" class="sorting_disabled" rowspan="1" colspan="1"
-                                                    style="width: 47px;">App类型</th>
-                                                <th width="150" class="sorting_disabled" rowspan="1" colspan="1"
-                                                    style="width: 125px;">AppID</th>
-                                                <th width="200" class="sorting_disabled" rowspan="1" colspan="1"
-                                                    style="width: 232px;">AppKey</th>
+                                                    style="width: 13%;">供应商名称</th>
                                                 <th class="sorting_disabled" rowspan="1" colspan="1"
-                                                    style="width: 47px;">描述</th>
-                                                <th width="120" class="sorting_disabled" rowspan="1" colspan="1"
-                                                    style="width: 18px;">状态</th>
-                                                <th width="100" rowspan="1" colspan="1">操作</th>
+                                                    style="width: 13%;">联系人</th>
+                                                <th class="sorting_disabled" rowspan="1" colspan="1"
+                                                    style="width: 13%;">电话号码</th>
+                                                <th width="200" class="sorting_disabled" rowspan="1" colspan="1"
+                                                    style="width: 25%">地址</th>
+                                                <th class="sorting_disabled" rowspan="1" colspan="1"
+                                                    style="width: 25%;">备注</th>
+                                                <th style="width: 10%;" rowspan="1" colspan="1">操作</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr role="row" class="odd">
                                                 <td><input type="checkbox" name="id" value="8"></td>
-                                                <td>高校管理端</td>
-                                                <td>Android维修端</td>
-                                                <td>LDqFTqNzzaBUZXMw</td>
-                                                <td>86C791D52C16C704E008491D4F1AFA4D</td>
-                                                <td>高校管理端</td>
-                                                <td><a href="javascript:;" func="btnState" data-id="8" data-state="1"
-                                                        title="点击禁用"><i class="fa fa-eye"></i>&nbsp;已启用</a></td>
-                                                <td><a href="javascript:;" func="btnEdit" data-id="8" class="active"
-                                                        title="编辑"><i class="fa fa-edit"></i>编辑</a> <a
-                                                        href="javascript:;" func="del" data-id="8" class="active"
-                                                        title="删除"><i class="fa fa-trash"></i>删除</a></td>
-                                            </tr>
-                                            <tr role="row" class="even">
-                                                <td><input type="checkbox" name="id" value="7"></td>
-                                                <td>Android维修客户端</td>
-                                                <td>IOS维修端</td>
-                                                <td>cUOMwRUNZYDAnVZJ</td>
-                                                <td>F6BCBEB08D448F74E6C3DB45CCDAF8C3</td>
-                                                <td>Android维修客户端</td>
-                                                <td><a href="javascript:;" func="btnState" data-id="7" data-state="1"
-                                                        title="点击禁用"><i class="fa fa-eye"></i>&nbsp;已启用</a></td>
-                                                <td><a href="javascript:;" func="btnEdit" data-id="7" class="active"
-                                                        title="编辑"><i class="fa fa-edit"></i>编辑</a> <a
-                                                        href="javascript:;" func="del" data-id="7" class="active"
-                                                        title="删除"><i class="fa fa-trash"></i>删除</a></td>
-                                            </tr>
-                                            <tr role="row" class="odd">
-                                                <td><input type="checkbox" name="id" value="6"></td>
-                                                <td>IOS维修客户端</td>
-                                                <td>Android住户端</td>
-                                                <td>sBTzLEdflJuoUUAS</td>
-                                                <td>D67CBE9AB1B75DEAE9B14DF8EA642C56</td>
-                                                <td>IOS维修客户端</td>
-                                                <td><a href="javascript:;" func="btnState" data-id="6" data-state="1"
-                                                        title="点击禁用"><i class="fa fa-eye"></i>&nbsp;已启用</a></td>
-                                                <td><a href="javascript:;" func="btnEdit" data-id="6" class="active"
-                                                        title="编辑"><i class="fa fa-edit"></i>编辑</a> <a
-                                                        href="javascript:;" func="del" data-id="6" class="active"
-                                                        title="删除"><i class="fa fa-trash"></i>删除</a></td>
-                                            </tr>
-                                            <tr role="row" class="even">
-                                                <td><input type="checkbox" name="id" value="5"></td>
-                                                <td>Android住户客户端</td>
-                                                <td>IOS住户端</td>
-                                                <td>oVuxBzqHMaBnSelK</td>
-                                                <td>D3A24EC57FFDAB97AAAF2FC32DD79E26</td>
-                                                <td>Android住户客户端</td>
-                                                <td><a href="javascript:;" func="btnState" data-id="5" data-state="1"
-                                                        title="点击禁用"><i class="fa fa-eye"></i>&nbsp;已启用</a></td>
-                                                <td><a href="javascript:;" func="btnEdit" data-id="5" class="active"
-                                                        title="编辑"><i class="fa fa-edit"></i>编辑</a> <a
-                                                        href="javascript:;" func="del" data-id="5" class="active"
-                                                        title="删除"><i class="fa fa-trash"></i>删除</a></td>
-                                            </tr>
-                                            <tr role="row" class="odd">
-                                                <td><input type="checkbox" name="id" value="4"></td>
-                                                <td>IOS住户客户端</td>
-                                                <td>App类型</td>
-                                                <td>JiJngHZkJZiHHXVO</td>
-                                                <td>1B665A92B1A637EB81243C00AA71496A</td>
-                                                <td>IOS住户客户端</td>
-                                                <td><a href="javascript:;" func="btnState" data-id="4" data-state="1"
-                                                        title="点击禁用"><i class="fa fa-eye"></i>&nbsp;已启用</a></td>
-                                                <td><a href="javascript:;" func="btnEdit" data-id="4" class="active"
-                                                        title="编辑"><i class="fa fa-edit"></i>编辑</a> <a
-                                                        href="javascript:;" func="del" data-id="4" class="active"
-                                                        title="删除"><i class="fa fa-trash"></i>删除</a></td>
+                                                <td>杭州易和网络</td>
+                                                <td>张三丰</td>
+                                                <td>13958909456</td>
+                                                <td>杭州市西湖区古墩路</td>
+                                                <td></td>
+                                                <td class="pd0">
+                                                    <a class="edit" href="javascript:;" func="btnEdit" data-id="8" class="active" title="编辑">
+                                                        编辑
+                                                    </a> 
+                                                    <a class="del" href="javascript:;" func="del" data-id="8" class="active" title="删除">
+                                                        删除
+                                                    </a>
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-sm-5">
-                                    <div class="dataTables_info" id="datalist_info" role="status" aria-live="polite">显示第
-                                        1 至 5 项结果，共 5 项</div>
-                                </div>
-                                <div class="col-sm-7">
-                                    <div class="dataTables_paginate paging_simple_numbers" id="datalist_paginate">
-                                        <ul class="pagination">
-                                            <li class="paginate_button previous disabled" id="datalist_previous"><a
-                                                    href="#" aria-controls="datalist" data-dt-idx="0"
-                                                    tabindex="0">上页</a></li>
-                                            <li class="paginate_button active"><a href="#" aria-controls="datalist"
-                                                    data-dt-idx="1" tabindex="0">1</a></li>
-                                            <li class="paginate_button next disabled" id="datalist_next"><a href="#"
-                                                    aria-controls="datalist" data-dt-idx="2" tabindex="0">下页</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -445,7 +374,7 @@
 
     <script>
         $(function () {
-            let currUrl = document.location.pathname;
+            var currUrl = document.location.pathname;
             console.log(currUrl);
             $.ajax({
                 url: "/system/resourcePage",
@@ -456,10 +385,10 @@
                     if (d.code !== "200") {
                         alert(d.message);
                     }
-                    let data = d.data;
-                    let preData = [];
-                    let cData = [];
-                    for (let i = 0; i < data.length; i++) {
+                    var data = d.data;
+                    var preData = [];
+                    var cData = [];
+                    for (var i = 0; i < data.length; i++) {
                         if (data[i].resParentId === 0) {
                             preData.push(data[i]);
                         } else {
@@ -467,15 +396,15 @@
                         }
                     }
 
-                    let html = [];
+                    var html = [];
                     html.push('<li class="header">MAIN NAVIGATION</li>')
-                    for (let i = 0; i < preData.length; i++) {
-                        let htmlEnum = [];
+                    for (var i = 0; i < preData.length; i++) {
+                        var htmlEnum = [];
                         htmlEnum.push(" <ul class=\"treeview-menu\">");
-                        let active = false;
-                        for (let j = 0; j < cData.length; j++) {
+                        var active = false;
+                        for (var j = 0; j < cData.length; j++) {
                             if (cData[j].resParentId == preData[i].id) {
-                                let css = "";
+                                var css = "";
                                 if (cData[j].resUrl === currUrl) {
                                     css = "active";
                                     active = true;
@@ -502,7 +431,7 @@
                         html.push("</li>\n")
                     }
 
-                    let a = html.join("");
+                    var a = html.join("");
                     $("#menu").html(a);
 
                 }
@@ -520,9 +449,9 @@
     <script type="text/javascript" charset="utf-8" src="../../static/plugins/WebUploader/webuploader.min.js"></script>
 
     <script type="text/javascript">
-        var oTable;
 
         $(function () {
+            var oTable;
             // oTable = $('#datalist').DataTable({
             //     autoWidth: true,
             //     deferRender: true,
