@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html style="height: auto; min-height: 100%;">
 
 <head>
@@ -544,11 +545,12 @@
                         },
                     },
                     data: (function () {
-                        let arr = [10, 52, 200, 334, 390, 330, 220]
-                        arr = arr.map((value) => {
-                            return value / 4
-                        })
-                        return arr
+                        var arr = [10, 52, 200, 334, 390, 330, 220]
+                        var newArr =[]
+                        for (let index = 0; index < arr.length; index++) {
+                            newArr.push(arr[index]/4)
+                        }
+                        return newArr
                     })()
                 }
             ],
