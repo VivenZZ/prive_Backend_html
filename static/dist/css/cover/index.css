@@ -136,6 +136,12 @@
 	height: 106px;
 	background: url('../../img/new/header.png') center center no-repeat;
 	background-size: cover;
+	/*针对IE8的hack，目的是除掉之前background*/
+	background: none\9;
+	/*设置css滤镜*/
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='D:/private/Backend_Html/static/dist/img/new/header.png', sizingMethod='scale');
+
+
 }
 .new_header h1{
   line-height: 86px;
@@ -181,10 +187,11 @@ body {
 	background: -o-linear-gradient( top,#320e32,#132632);
 	background: -ms-linear-gradient( top,#320e32,#132632);
 	background: linear-gradient( top,#320e32,#132632);
+
 }
 
 .skin-blue .main-sidebar {
-	z-index: 9999;
+	z-index: 998;
 }
 
 .skin-blue .wrapper, .skin-blue .main-sidebar, .skin-blue .left-side {
@@ -217,6 +224,7 @@ body {
 .skin-blue .sidebar-menu>li>.treeview-menu {
 	padding-left: 15px;
 	background-color: rgba(0,0,0,0);
+	background-color: #132632\9;/* IE8 */
 }
 
 .treeview-menu > li:first-child {
@@ -275,6 +283,11 @@ body {
 	margin-top: -40px;
 	background: url(../../img/new/content.png) top center no-repeat;
 	background-size: 100%;
+	/*针对IE8的hack，目的是除掉之前background*/
+	background: none\9;
+	/*设置css滤镜*/
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='D:/private/Backend_Html/static/dist/img/new/content.png', sizingMethod='scale');
+
 }
 .content-wrapper h1{
 	font-family: PingFang-SC-Bold;
