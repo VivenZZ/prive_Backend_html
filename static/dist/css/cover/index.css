@@ -128,14 +128,14 @@
 }
 /* 头部改写 */
 .new_header {
-	position: relative;
+	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 999;
 	width: 100%;
 	height: 106px;
 	background: url('../../img/new/header.png') center center no-repeat;
-	background-size: cover;
+	background-size: 100% 100%;
 	/*针对IE8的hack，目的是除掉之前background*/
 	background: none\9;
 	/*设置css滤镜*/
@@ -182,6 +182,8 @@
   margin-right: 30px;
 }
 body {
+	height: 100%;
+	background: #320e32;
 	background: -moz-linear-gradient( top,#320e32,#132632);
 	background: -webkit-linear-gradient( top,#320e32,#132632);
 	background: -o-linear-gradient( top,#320e32,#132632);
@@ -192,6 +194,7 @@ body {
 
 .skin-blue .main-sidebar {
 	z-index: 998;
+	position: fixed;
 }
 
 .skin-blue .wrapper, .skin-blue .main-sidebar, .skin-blue .left-side {
@@ -280,14 +283,8 @@ body {
 }
 .content-wrapper{
 	margin-left: 173px;
-	margin-top: -40px;
-	background: url(../../img/new/content.png) top center no-repeat;
-	background-size: 100%;
-	/*针对IE8的hack，目的是除掉之前background*/
-	background: none\9;
-	/*设置css滤镜*/
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='D:/private/Backend_Html/static/dist/img/new/content.png', sizingMethod='scale');
-
+	padding-top: 76px;
+	background-color: rgba(0,0,0,0);
 }
 .content-wrapper h1{
 	font-family: PingFang-SC-Bold;
@@ -303,30 +300,30 @@ body {
 	padding: 15px 0 0 0;
 }
 .content-wrapper .box-header{
-	padding: 20px 45px;
+	padding: 0 45px 20px;
 }
 .content-wrapper .mailbox-controls .form-group label{
 	margin-right: 15px;
 }
 .content-wrapper .mailbox-controls .form-group{
-	margin-right: 60px;
+	margin-right: 20px;
 }
 .content-wrapper .mailbox-controls .form-group input{
 	width: 150px;
 	height: 30px;
 	font-size: 12px;
 }
-.content-wrapper table.dataTable{
+.content-wrapper table{
 	border: 1px solid #1F64BF;
 }
-.content-wrapper table.dataTable thead{
+.content-wrapper table thead{
 	background-color: #406799;
 	font-family: PingFangSC-Regular;
 	font-size: 14px;
 	color: #FFFFFF;
 	letter-spacing: 1.8px;
 }
-.content-wrapper table.dataTable thead th{
+.content-wrapper table thead th{
 	font-weight: 400;
 }
 .content-wrapper .box-body{
@@ -371,25 +368,24 @@ body {
 	flex-direction: column;
 	align-items: center;
 }
-.table>tbody>tr>.pd0 a{
+.table>tbody>tr a{
 	margin-top: 5px;
-	width: 45px;
 	height: 22px;
 	line-height: 22px;
 	font-family: PingFangSC-Regular;
 	font-size: 12px;
 	color: #5AB5EC;
 	letter-spacing: 1.2px;
-	border: 1px solid #0695D7;
+	text-align: center;
 }
-.table>tbody>tr>.pd0 .edit{
+/* .table>tbody>tr .edit{
 	color: #5AB5EC;
 	border: 1px solid #0695D7;
 }
-.table>tbody>tr>.pd0 .del{
+.table>tbody>tr .del{
 	color: #E7BB13;
 	border: 1px solid #EBB610;
-}
+} */
 .content-wrapper .btn_search{
 	border-radius: 0;
 	padding: 6px 9px;
@@ -442,7 +438,6 @@ body {
 	background: none;
 	background-color: rgba(0,0,0,0);
 	display: flex;
-	padding-top: 106px;
 	box-sizing: border-box;
 	overflow: hidden;
 	padding-bottom: 30px;
@@ -564,7 +559,7 @@ body {
 	text-align: left;
 	padding: 15px 0;
 }
-.modal-footer .btn_add{
+.modal-footer .btn-primary{
 	background: #2E3A62;
 	border: 1px solid #38E893;
 	font-family: PingFangSC-Regular;
@@ -572,14 +567,14 @@ body {
 	color: #38E893;
 	letter-spacing: 1.6px;
 }
-.modal-footer .btn_cancel{
+.modal-footer .btn-default{
 	background: #2E3A62;
 	border: 1px solid #0695D7;
 	font-family: PingFangSC-Regular;
 	font-size: 16px;
 	color: #62C1F9;
 	letter-spacing: 1.6px;
-	margin-left: 18px !important;
+	margin-left: 110px !important;
 }
 .form-group label{
   font-family: PingFang-SC-Bold;
@@ -611,7 +606,7 @@ body {
 
 .data_show .l,
 .data_show .r{
-	width: 20%;
+	width: 18%;
 }
 .data_show .m{
 	width: 60%;
@@ -684,4 +679,95 @@ body {
 }
 .skin-blue .sidebar-menu>.notree>a::after{
 	background: none !important;
+}
+
+/* 样式修改 */
+div.dataTables_wrapper div.dataTables_info{
+	color: #fff;
+}
+.close{
+	color: #fff !important;
+	opacity: 0.8;
+	font-weight: 400;
+	font-size: 18px;
+}
+.close:hover{
+	opacity: 1;
+}
+.content_newWrapper{
+	/* background: url(../../img/new/content_02.png) top center no-repeat;
+	background-size: 100% 100%; */
+	/*针对IE8的hack，目的是除掉之前background*/
+	background: none\9;
+	/*设置css滤镜*/
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='D:/private/Backend_Html/static/dist/img/new/content.png', sizingMethod='scale');
+}
+.top_bg{
+	width: 100%;
+	height: 69px;
+}
+.bottom_bg{
+	width: 100%;
+	height: 48px;
+}
+.middle_bg{
+	background: url(../../img/new/content_02.png) top center no-repeat;
+	background-size: 100% 100%;
+	margin-top: 40px;
+}
+.content{
+	padding-top: 0;
+}
+.skin-blue .content-header{
+	margin-top: -72px;
+}
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control{
+	background: #011624;
+	color: rgb(156, 156, 156);
+}
+.btn-sm{
+	position: relative;
+	border-radius: 0;
+	padding: 0 9px;
+	height: 32px;
+	line-height: 32px;
+	margin-left: 20px;
+	font-size: 12px;
+	text-indent: 26px;
+	color: #36D187;
+	letter-spacing: 1.2px;
+	background: rgba(0,0,0,0);
+	border: 1 solid #3CF88F;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,0.50), inset 0 1px 6px 0 #36C679;
+}
+.btn-sm:hover{
+	background: rgba(0,0,0,0);
+	color: #36D187;
+}
+.btn-sm .fa{
+	position: absolute;
+	top: 7px;
+	left: 9px;
+}
+.btn-sm .fa-plus{
+	width: 18px;
+	height: 16px;
+	background: url(../..//img/new/add.png) center center no-repeat;
+	background-size: 18px 16px;
+}
+.btn-sm .fa-search{
+	width: 16px;
+	height: 16px;
+	background: url(../..//img/new/search.png) center center no-repeat;
+	background-size: 16px 16px;
+}
+.btn-sm .fa-trash-o{
+	top: 9px;
+	width: 19px;
+	height: 14px;
+	background: url(../..//img/new/del.png) center center no-repeat;
+	background-size: 19px 14px;
+}
+.fa:before{
+	content: ''
 }

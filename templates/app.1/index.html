@@ -773,6 +773,13 @@
 
             myChart7.setOption(option7);
             window.onresize = function () {
+                var windowW = $(window).width()
+                var boxH = $(window).height();
+                var innerHeight = boxH - 150 - 76
+                $(".data_show_box1,.data_show_box5").height(innerHeight * 35 / 100)
+                $(".data_show_box2,.data_show_box6").height(innerHeight * 65 / 100)
+                $('.data_show_box4').height(innerHeight - 104)
+                $(".data_show").parent('.content-wrapper').css({"background": "none"});
                 //重置容器高宽
                 myChart1.resize();
                 myChart2.resize();
