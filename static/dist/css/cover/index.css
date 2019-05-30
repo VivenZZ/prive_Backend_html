@@ -605,11 +605,11 @@ body {
 .data_show .m{
 	width: 60%;
 }
-.data_show .l .data_show_box1,
+/* .data_show .l .data_show_box1, */
 .data_show .r .data_show_box5{
 	height: 30%;
 }
-.data_show .l .data_show_box2,
+/* .data_show .l .data_show_box2, */
 .data_show .r .data_show_box6{
 	height: 56%;
 }
@@ -624,6 +624,10 @@ body {
 #main4,
 #main5{
 	height: 100%;
+	margin-top: 15px;
+}
+#main5{
+	height: 90%;
 	margin-top: 15px;
 }
 /* .data_show .l,

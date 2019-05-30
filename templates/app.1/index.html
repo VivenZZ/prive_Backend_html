@@ -346,7 +346,17 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/4.2.1/echarts-en.common.js"></script>
     <script type="text/javascript">
-        // 第一个
+    $(function () {
+        // 第一个高度控制
+        var windowW = $(window).width()
+        var boxH = $(".data_show").innerHeight();
+        var innerHeight = boxH - 130 -76
+        $(".data_show_box1,.data_show_box5").height(innerHeight * 35 /100)
+        $(".data_show_box2,.data_show_box6").height(innerHeight * 65 /100)
+        $('.data_show_box4').height(innerHeight-104)
+        console.log(boxH)
+
+
         var myChart1 = echarts.init(document.getElementById('main1'), 'dark');
         var option1 = {
             tooltip: {
@@ -643,7 +653,33 @@
                     },
                     data: [30, 58]
                 }
-            ]
+            ],
+            // 解决文字过多不显示的问题
+            axisLabel: {
+                interval: 0,
+                formatter: function (value) {
+                    var ret = "";//拼接加\n返回的类目项  
+                    var maxLength = 2;//每项显示文字个数  
+                    var valLength = value.length;//X轴类目项的文字个数  
+                    var rowN = Math.ceil(valLength / maxLength); //类目项需要换行的行数 
+                    console.log(windowW) 
+                            if (rowN > 1 && windowW < 1500)//如果类目项的文字大于3,  
+                        {
+                            for (var i = 0; i < rowN; i++) {
+                                var temp = "";//每次截取的字符串  
+                                var start = i * maxLength;//开始截取的位置  
+                                var end = start + maxLength;//结束截取的位置  
+                                //这里也可以加一个是否是最后一行的判断，但是不加也没有影响，那就不加吧  
+                                temp = value.substring(start, end) + "\n";
+                                ret += temp; //凭借最终的字符串  
+                            }
+                            return ret;
+                        }
+                        else {
+                            return value;
+                        }
+                }
+            }
         };
 
 
@@ -741,16 +777,21 @@
             myChart6.resize();
             myChart7.resize();
         };
-        setTimeout(function(){
+        // setTimeout(function(){
             
-            myChart1.resize();
-            myChart2.resize();
-            myChart3.resize();
-            myChart4.resize();
-            myChart5.resize();
-            myChart6.resize();
-            myChart7.resize();
-        },0)
+        //     myChart1.resize();
+        //     myChart2.resize();
+        //     myChart3.resize();
+        //     myChart4.resize();
+        //     myChart5.resize();
+        //     myChart6.resize();
+        //     myChart7.resize();
+        // },0)
+    })
+        
+
+
+        
     </script>
 
 
