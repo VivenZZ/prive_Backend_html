@@ -354,7 +354,7 @@
         $(function () {
             // 第一个高度控制
             var windowW = $(window).width()
-            var boxH = $(".content-wrapper").innerHeight();
+            var boxH = $(window).height();
             var innerHeight = boxH - 150 - 76
             $(".data_show_box1,.data_show_box5").height(innerHeight * 35 / 100)
             $(".data_show_box2,.data_show_box6").height(innerHeight * 65 / 100)
