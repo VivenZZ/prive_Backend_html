@@ -45,6 +45,7 @@
 
     <link rel="stylesheet" href="../../static/plugins/ValidForm/ValidForm.css">
     <link rel="stylesheet" href="../../static/plugins/WebUploader/webuploader.css">
+
     <link rel="stylesheet" href="../../static/dist/css/cover/index.css">
 
     <style type="text/css">
@@ -176,6 +177,12 @@
                     </div>
                     <p class="data_show_title">车位统计</p>
                     <div class="data_show_box data_show_box2" style="position: relative;">
+                        <ul class="time_chiose">
+                            <li class="pickerdate_box"><input type="text" id="pickerDate1"></li>
+                            <li><img src="../../static/dist/img/new/change.png" alt="" srcset=""></li>
+                            <li class="pickerdate_box"><input type="text" id="pickerDate2"></li>
+                            <li class="pickerdate_search"><span>查询</span></li>
+                        </ul>
                         <div id="main2" style="width: 100%;"></div>
                         <p class="data_show_letter_title">利用率</p>
                         <div id="main3" style="width: 100%;"></div>
@@ -219,6 +226,12 @@
                     </div>
                     <p class="data_show_title">物业统计-安防设备</p>
                     <div class="data_show_box data_show_box6" style="position: relative;">
+                        <ul class="time_chiose">
+                            <li class="pickerdate_box"><input type="text" id="pickerDate3"></li>
+                            <li><img src="../../static/dist/img/new/change.png" alt="" srcset=""></li>
+                            <li class="pickerdate_box"><input type="text" id="pickerDate4"></li>
+                            <li class="pickerdate_search"><span>查询</span></li>
+                        </ul>
                         <div id="main6" style="width: 100%;"></div>
                         <p class="data_show_letter_title">在线率/故障率</p>
                         <div id="main7" style="width: 100%;"></div>
@@ -237,7 +250,8 @@
     </div>
     <!-- ./wrapper -->
     <!-- jQuery 3 -->
-    <script src="https://cdn.bootcss.com/jquery/1.10.0/jquery.min.js"></script>
+    <script src="../../static/bower_components/jquery/dist/jquery.min.js"></script>
+    <!--[if (IE 8)|(IE 9)]><script src="https://cdn.bootcss.com/jquery/1.10.0/jquery.min.js"><![endif]-->
     <!-- jQuery UI 1.11.4 -->
     <script src="../../static/bower_components/jquery-ui/jquery-ui.min.js"></script>
     <!-- Bootstrap 3.3.7 -->
@@ -265,6 +279,7 @@
     <script src="../../static/bower_components/fastclick/lib/fastclick.js"></script>
     <!-- AdminLTE App -->
     <script src="../../static/dist/js/adminlte.min.js"></script>
+    
 
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     <!-- <script src="../../static/dist/js/pages/dashboard.js"></script> -->
@@ -349,10 +364,25 @@
     <script src="../../static/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
     <script type="text/javascript" charset="utf-8" src="../../static/plugins/ValidForm/Validform_v5.3.2.js"></script>
     <script type="text/javascript" charset="utf-8" src="../../static/plugins/WebUploader/webuploader.min.js"></script>
-
+    <script src="../../static/plugins/datePicker/laydate.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/4.2.1/echarts-en.common.js"></script>
     <script type="text/javascript">
         $(function () {
+            // 日期选择器  http://www.jq22.com/jquery-info1059 文档地址
+            laydate({
+                elem: '#pickerDate1'
+            });
+            laydate({
+                elem: '#pickerDate2'
+            });
+            laydate({
+                elem: '#pickerDate3'
+            });
+            laydate({
+                elem: '#pickerDate4'
+            });
+
+
             // 第一个高度控制
             var windowW = $(window).width()
             var boxH = $(window).height();
@@ -361,7 +391,15 @@
             $(".data_show_box2,.data_show_box6").height(innerHeight * 65 / 100)
             $('.data_show_box4').height(innerHeight - 104)
             $(".data_show").parent('.content-wrapper').css({"background": "none"});
-
+            if (windowW < 1366) {
+                $("body").css({
+                    "overflow-x": "scroll"
+                })
+            } else {
+                $("body").css({
+                    "overflow-x": "hidden"
+                })
+            }
 
             var myChart1 = echarts.init(document.getElementById('main1'), 'dark');
             var option1 = {
@@ -619,7 +657,7 @@
                 xAxis: [
                     {
                         type: 'category',
-                        data: ['个人区域', '公共区域',],
+                        data: ['个人区域', '公共区域'],
                         axisLine: { show: false },
                         axisTick: {
                             alignWithLabel: true
@@ -647,7 +685,7 @@
                     {
                         name: '直接访问',
                         type: 'bar',
-                        barWidth: '60%',
+                        barWidth: '40%',
                         itemStyle: {
                             normal: {
                                 // 定制显示（按顺序）
@@ -668,7 +706,7 @@
                         var maxLength = 2;//每项显示文字个数  
                         var valLength = value.length;//X轴类目项的文字个数  
                         var rowN = Math.ceil(valLength / maxLength); //类目项需要换行的行数 
-                        console.log(windowW)
+
                         if (rowN > 1 && windowW < 1500)//如果类目项的文字大于3,  
                         {
                             for (var i = 0; i < rowN; i++) {

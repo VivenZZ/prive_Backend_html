@@ -183,6 +183,7 @@
 	float: left;
 }
 body {
+	min-width: 1366px;
 	height: 100%;
 	background-color: #222d32\9;
 	background: -moz-linear-gradient( top,#320e32,#132632);
@@ -190,7 +191,7 @@ body {
 	background: -o-linear-gradient( top,#320e32,#132632);
 	background: -ms-linear-gradient( top,#320e32,#132632);
 	background: linear-gradient( top,#320e32,#132632);
-	overflow: hidden;
+	overflow-y: hidden;
 }
 
 .skin-blue .main-sidebar {
@@ -618,10 +619,10 @@ option{
 
 .data_show .l,
 .data_show .r{
-	width: 18%;
+	width: 22%;
 }
 .data_show .m{
-	width: 60%;
+	width: 52%;
 }
 /* .data_show .l .data_show_box1, */
 .data_show .r .data_show_box5{
@@ -806,4 +807,46 @@ div.dataTables_wrapper div.dataTables_info{
 }
 .dataTables_paginate{
 	text-align: right;
+}
+/* 日期选择 */
+.time_chiose{
+	list-style: none;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	margin: 20px 10px;
+}
+.time_chiose img{
+	margin: 2px 5px 0;
+}
+.time_chiose>li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+.time_chiose>li input{
+	width: 100%;
+	border: 1px solid #1E65C1;
+	color: #62c1f9;
+	font-weight: bold;
+	height: 30px;
+	line-height: 30px;
+	background: rgba(0,0,0,0);
+	text-align: center;
+	background: #222d32\9;
+}
+.time_chiose .pickerdate_box{
+	width: 35%;
+}
+.time_chiose .pickerdate_search{
+	padding: 0 5px;
+	height: 30px;
+	line-height: 30px;
+	background: #27AAFC;
+	font-family: PingFang-SC-Bold;
+	font-size: 12px;
+	color: #FFFFFF;
+	letter-spacing: 1.2px;
+	margin-left: 10px;
 }
