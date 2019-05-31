@@ -166,30 +166,31 @@
   color: #00ADFE;
 	letter-spacing: 1.8px;
 	margin-top: -2px;
+	float: left;
 }
 .new_hedder_tips_icon{
   width: 15px;
   height: 16px;
 	background: url('../../img/new/icon-tips.png') center center no-repeat;
-	background-size: cover;
   margin-right: 27px;
+	float: left;
 }
 .new_hedder_out_icon{
   width: 15px;
   height: 15px;
 	background: url('../../img/new/icon-out.png') center center no-repeat;
-	background-size: cover;
   margin-right: 30px;
+	float: left;
 }
 body {
 	height: 100%;
-	background: #320e32;
+	background-color: #222d32\9;
 	background: -moz-linear-gradient( top,#320e32,#132632);
 	background: -webkit-linear-gradient( top,#320e32,#132632);
 	background: -o-linear-gradient( top,#320e32,#132632);
 	background: -ms-linear-gradient( top,#320e32,#132632);
 	background: linear-gradient( top,#320e32,#132632);
-
+	overflow: hidden;
 }
 
 .skin-blue .main-sidebar {
@@ -227,7 +228,7 @@ body {
 .skin-blue .sidebar-menu>li>.treeview-menu {
 	padding-left: 15px;
 	background-color: rgba(0,0,0,0);
-	background-color: #132632\9;/* IE8 */
+	background-color: #222d32\9;/* IE8 */
 }
 
 .treeview-menu > li:first-child {
@@ -285,6 +286,12 @@ body {
 	margin-left: 173px;
 	padding-top: 76px;
 	background-color: rgba(0,0,0,0);
+	background-color: #222d32\9;
+	background: -moz-linear-gradient( top,#320e32,#132632);
+	background: -webkit-linear-gradient( top,#320e32,#132632);
+	background: -o-linear-gradient( top,#320e32,#132632);
+	background: -ms-linear-gradient( top,#320e32,#132632);
+	background: linear-gradient( top,#320e32,#132632);
 }
 .content-wrapper h1{
 	font-family: PingFang-SC-Bold;
@@ -341,6 +348,7 @@ body {
 }
 .content-wrapper .table-hover>tbody>tr:hover{
 	background-color: rgba(0,0,0,0);
+	background-color: #273a60\9;
 }
 .content-wrapper .box-header:after{
 	height: 2px;
@@ -590,6 +598,10 @@ body {
 	font-size: 16px;
 	color: #FFFFFF;
 	letter-spacing: 1.6px;
+	background: #2c2b50\9;
+}
+option{
+	background: #2c2b50;
 }
 /* 弹框 end */
 .new_header_fixed{
@@ -698,9 +710,9 @@ div.dataTables_wrapper div.dataTables_info{
 	/* background: url(../../img/new/content_02.png) top center no-repeat;
 	background-size: 100% 100%; */
 	/*针对IE8的hack，目的是除掉之前background*/
-	background: none\9;
+	/* background: none\9;
 	/*设置css滤镜*/
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='D:/private/Backend_Html/static/dist/img/new/content.png', sizingMethod='scale');
+/*	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='D:/private/Backend_Html/static/dist/img/new/content.png', sizingMethod='scale'); */
 }
 .top_bg{
 	width: 100%;
@@ -714,6 +726,13 @@ div.dataTables_wrapper div.dataTables_info{
 	background: url(../../img/new/content_02.png) top center no-repeat;
 	background-size: 100% 100%;
 	margin-top: 40px;
+	/*针对IE8的hack，目的是除掉之前background*/
+	 background: none\9;
+	 margin-top: 39px\9;
+	/*设置css滤镜*/
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='D:/private/Backend_Html/static/dist/img/new/content_02.png', sizingMethod='scale'); 
+	/* overflow-y:hidden;  */
+
 }
 .content{
 	padding-top: 0;
@@ -737,12 +756,15 @@ div.dataTables_wrapper div.dataTables_info{
 	color: #36D187;
 	letter-spacing: 1.2px;
 	background: rgba(0,0,0,0);
-	border: 1 solid #3CF88F;
+	border: 1px solid #3CF88F;
 	box-shadow: 0 2px 3px 0 rgba(0,0,0,0.50), inset 0 1px 6px 0 #36C679;
+	background: #222d32\9;
 }
 .btn-sm:hover{
 	background: rgba(0,0,0,0);
 	color: #36D187;
+	border-color: #36D187;
+	background: #222d32\9;
 }
 .btn-sm .fa{
 	position: absolute;
@@ -768,6 +790,20 @@ div.dataTables_wrapper div.dataTables_info{
 	background: url(../..//img/new/del.png) center center no-repeat;
 	background-size: 19px 14px;
 }
+.btn-default-del{
+	color: #FFC600;
+	border-color: #FFC600;
+}
+.btn-default-del:hover{
+	color: #FFC600;
+	border-color: #FFC600;
+}
 .fa:before{
 	content: ''
+}
+.pull-left .form-group{
+	float: left;
+}
+.dataTables_paginate{
+	text-align: right;
 }

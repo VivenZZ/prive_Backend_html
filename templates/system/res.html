@@ -187,670 +187,821 @@
                                 </div>
                             </div>
                             <div class="box-body">
-                                <table id="datalist" class="table table-bordered table-striped table-hover tree_table"
-                                    width="100%">
-                                    <thead>
-                                        <tr>
-                                            <th width="200">资源名称</th>
-                                            <th>链接地址</th>
-                                            <th>链接编码</th>
-                                            <th width="120">类型</th>
-                                            <th width="120">状态</th>
-                                            <th width="120">排序</th>
-                                            <th width="240">操作</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="datalist_body">
-                                        <tr id="1" haschild="true" previd="" depth="1">
-                                            <td><span class="prev_sp"></span><span arrow="true"
-                                                    class="default_active_node default_open"></span>基本信息设置</td>
-                                            <td></td>
-                                            <td>baseInfo</td>
-                                            <td> <span class="label label-success">目录</span> </td>
-                                            <td>正常</td>
-                                            <td>1</td>
-                                            <td><a href="javascript:;" func="btnEdit" data-id="1"
-                                                    class="btn btn-success btn-xs" data-type="2"><i
-                                                        class="fa fa-edit"></i> 编辑</a>&nbsp;<a href="javascript:;"
-                                                    func="btnAddSub" data-id="1" class="btn btn-primary btn-xs"
-                                                    data-type="3" data-name="基本信息设置"><i class="fa fa-plus"></i>
-                                                    添加子类</a>&nbsp;<a href="javascript:;" func="del" data-id="1"
-                                                    class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> 删除</a>
-                                            </td>
-                                        </tr>
-                                        <tr id="4" pid="1" class="1" isfirstone="true" depth="2">
-                                            <td><span class="prev_sp"><span
-                                                        class="default_node default_vertline"></span></span><span
-                                                    arrow="true" class="default_node default_leaf"></span>服务规约设置</td>
-                                            <td>/statute/service</td>
-                                            <td>service</td>
-                                            <td><span class="label label-primary">菜单</span> </td>
-                                            <td>正常</td>
-                                            <td>1</td>
-                                            <td><a href="javascript:;" func="btnEdit" data-id="4"
-                                                    class="btn btn-success btn-xs" data-type="2"><i
-                                                        class="fa fa-edit"></i> 编辑</a>&nbsp;<a href="javascript:;"
-                                                    func="btnAddFun" data-id="4" class="btn btn-warning btn-xs"
-                                                    data-type="4" data-name="服务规约设置"><i class="fa fa-plus"></i>
-                                                    添加按钮</a>&nbsp;<a href="javascript:;" func="del" data-id="4"
-                                                    class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> 删除</a>
-                                            </td>
-                                        </tr>
-                                        <tr id="3" pid="1" class="1" previd="4" depth="2">
-                                            <td><span class="prev_sp"><span
-                                                        class="default_node default_vertline"></span></span><span
-                                                    arrow="true" class="default_node default_leaf"></span>停车费用设置</td>
-                                            <td>/parking/setting</td>
-                                            <td>setting</td>
-                                            <td><span class="label label-primary">菜单</span> </td>
-                                            <td>正常</td>
-                                            <td>2</td>
-                                            <td><a href="javascript:;" func="btnEdit" data-id="3"
-                                                    class="btn btn-success btn-xs" data-type="2"><i
-                                                        class="fa fa-edit"></i> 编辑</a>&nbsp;<a href="javascript:;"
-                                                    func="btnAddFun" data-id="3" class="btn btn-warning btn-xs"
-                                                    data-type="4" data-name="停车费用设置"><i class="fa fa-plus"></i>
-                                                    添加按钮</a>&nbsp;<a href="javascript:;" func="del" data-id="3"
-                                                    class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> 删除</a>
-                                            </td>
-                                        </tr>
-                                        <tr id="6" pid="1" class="1" previd="3" depth="2">
-                                            <td><span class="prev_sp"><span
-                                                        class="default_node default_vertline"></span></span><span
-                                                    arrow="true" class="default_node default_leaf"></span>维修物料管理</td>
-                                            <td>/materiel/list</td>
-                                            <td>materiel</td>
-                                            <td><span class="label label-primary">菜单</span> </td>
-                                            <td>正常</td>
-                                            <td>3</td>
-                                            <td><a href="javascript:;" func="btnEdit" data-id="6"
-                                                    class="btn btn-success btn-xs" data-type="2"><i
-                                                        class="fa fa-edit"></i> 编辑</a>&nbsp;<a href="javascript:;"
-                                                    func="btnAddFun" data-id="6" class="btn btn-warning btn-xs"
-                                                    data-type="4" data-name="维修物料管理"><i class="fa fa-plus"></i>
-                                                    添加按钮</a>&nbsp;<a href="javascript:;" func="del" data-id="6"
-                                                    class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> 删除</a>
-                                            </td>
-                                        </tr>
-                                        <tr id="7" pid="1" class="1" previd="6" depth="2">
-                                            <td><span class="prev_sp"><span
-                                                        class="default_node default_vertline"></span></span><span
-                                                    arrow="true" class="default_node default_leaf"></span>部门管理</td>
-                                            <td>/organization/department</td>
-                                            <td>department</td>
-                                            <td><span class="label label-primary">菜单</span> </td>
-                                            <td>正常</td>
-                                            <td>4</td>
-                                            <td><a href="javascript:;" func="btnEdit" data-id="7"
-                                                    class="btn btn-success btn-xs" data-type="2"><i
-                                                        class="fa fa-edit"></i> 编辑</a>&nbsp;<a href="javascript:;"
-                                                    func="btnAddFun" data-id="7" class="btn btn-warning btn-xs"
-                                                    data-type="4" data-name="部门管理"><i class="fa fa-plus"></i>
-                                                    添加按钮</a>&nbsp;<a href="javascript:;" func="del" data-id="7"
-                                                    class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> 删除</a>
-                                            </td>
-                                        </tr>
-                                        <tr id="22" pid="1" class="1" previd="7" depth="2">
-                                            <td><span class="prev_sp"><span
-                                                        class="default_node default_vertline"></span></span><span
-                                                    arrow="true" class="default_node default_leaf"></span>在岗人员管理</td>
-                                            <td>/organization/staff</td>
-                                            <td>staff</td>
-                                            <td><span class="label label-primary">菜单</span> </td>
-                                            <td>正常</td>
-                                            <td>5</td>
-                                            <td><a href="javascript:;" func="btnEdit" data-id="22"
-                                                    class="btn btn-success btn-xs" data-type="2"><i
-                                                        class="fa fa-edit"></i> 编辑</a>&nbsp;<a href="javascript:;"
-                                                    func="btnAddFun" data-id="22" class="btn btn-warning btn-xs"
-                                                    data-type="4" data-name="在岗人员管理"><i class="fa fa-plus"></i>
-                                                    添加按钮</a>&nbsp;<a href="javascript:;" func="del" data-id="22"
-                                                    class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> 删除</a>
-                                            </td>
-                                        </tr>
-                                        <tr id="12" pid="1" class="1" previd="22" depth="2">
-                                            <td><span class="prev_sp"><span
-                                                        class="default_node default_vertline"></span></span><span
-                                                    arrow="true" class="default_node default_leaf"></span>商品分类管理</td>
-                                            <td>/category/list</td>
-                                            <td>categorylist</td>
-                                            <td><span class="label label-primary">菜单</span> </td>
-                                            <td>正常</td>
-                                            <td>6</td>
-                                            <td><a href="javascript:;" func="btnEdit" data-id="12"
-                                                    class="btn btn-success btn-xs" data-type="2"><i
-                                                        class="fa fa-edit"></i> 编辑</a>&nbsp;<a href="javascript:;"
-                                                    func="btnAddFun" data-id="12" class="btn btn-warning btn-xs"
-                                                    data-type="4" data-name="商品分类管理"><i class="fa fa-plus"></i>
-                                                    添加按钮</a>&nbsp;<a href="javascript:;" func="del" data-id="12"
-                                                    class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> 删除</a>
-                                            </td>
-                                        </tr>
-                                        <tr id="5" pid="1" class="1" previd="12" islastone="true" depth="2">
-                                            <td><span class="prev_sp"><span
-                                                        class="default_node default_vertline"></span></span><span
-                                                    arrow="true" class="default_node default_last_leaf"></span>品牌管理</td>
-                                            <td>/brand/list</td>
-                                            <td>brand</td>
-                                            <td><span class="label label-primary">菜单</span> </td>
-                                            <td>正常</td>
-                                            <td>7</td>
-                                            <td><a href="javascript:;" func="btnEdit" data-id="5"
-                                                    class="btn btn-success btn-xs" data-type="2"><i
-                                                        class="fa fa-edit"></i> 编辑</a>&nbsp;<a href="javascript:;"
-                                                    func="btnAddFun" data-id="5" class="btn btn-warning btn-xs"
-                                                    data-type="4" data-name="品牌管理"><i class="fa fa-plus"></i>
-                                                    添加按钮</a>&nbsp;<a href="javascript:;" func="del" data-id="5"
-                                                    class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> 删除</a>
-                                            </td>
-                                        </tr>
-                                        <tr id="13" haschild="true" previd="1" depth="1">
-                                            <td><span class="prev_sp"></span><span arrow="true"
-                                                    class="default_active_node default_open"></span>供应商管理</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td> <span class="label label-success">目录</span> </td>
-                                            <td>正常</td>
-                                            <td>2</td>
-                                            <td><a href="javascript:;" func="btnEdit" data-id="13"
-                                                    class="btn btn-success btn-xs" data-type="2"><i
-                                                        class="fa fa-edit"></i> 编辑</a>&nbsp;<a href="javascript:;"
-                                                    func="btnAddSub" data-id="13" class="btn btn-primary btn-xs"
-                                                    data-type="3" data-name="供应商管理"><i class="fa fa-plus"></i>
-                                                    添加子类</a>&nbsp;<a href="javascript:;" func="del" data-id="13"
-                                                    class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> 删除</a>
-                                            </td>
-                                        </tr>
-                                        <tr id="14" pid="13" class="13" isfirstone="true" islastone="true" depth="2">
-                                            <td><span class="prev_sp"><span
-                                                        class="default_node default_vertline"></span></span><span
-                                                    arrow="true" class="default_node default_last_leaf"></span>供应商管理
-                                            </td>
-                                            <td>/supplier/list</td>
-                                            <td>supplierlist</td>
-                                            <td><span class="label label-primary">菜单</span> </td>
-                                            <td>正常</td>
-                                            <td>1</td>
-                                            <td><a href="javascript:;" func="btnEdit" data-id="14"
-                                                    class="btn btn-success btn-xs" data-type="2"><i
-                                                        class="fa fa-edit"></i> 编辑</a>&nbsp;<a href="javascript:;"
-                                                    func="btnAddFun" data-id="14" class="btn btn-warning btn-xs"
-                                                    data-type="4" data-name="供应商管理"><i class="fa fa-plus"></i>
-                                                    添加按钮</a>&nbsp;<a href="javascript:;" func="del" data-id="14"
-                                                    class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> 删除</a>
-                                            </td>
-                                        </tr>
-                                        <tr id="30" haschild="true" previd="13" depth="1">
-                                            <td><span class="prev_sp"></span><span arrow="true"
-                                                    class="default_active_node default_open"></span>住户管理</td>
-                                            <td></td>
-                                            <td>tenant</td>
-                                            <td> <span class="label label-success">目录</span> </td>
-                                            <td>正常</td>
-                                            <td>3</td>
-                                            <td><a href="javascript:;" func="btnEdit" data-id="30"
-                                                    class="btn btn-success btn-xs" data-type="2"><i
-                                                        class="fa fa-edit"></i> 编辑</a>&nbsp;<a href="javascript:;"
-                                                    func="btnAddSub" data-id="30" class="btn btn-primary btn-xs"
-                                                    data-type="3" data-name="住户管理"><i class="fa fa-plus"></i>
-                                                    添加子类</a>&nbsp;<a href="javascript:;" func="del" data-id="30"
-                                                    class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> 删除</a>
-                                            </td>
-                                        </tr>
-                                        <tr id="31" pid="30" class="30" isfirstone="true" depth="2">
-                                            <td><span class="prev_sp"><span
-                                                        class="default_node default_vertline"></span></span><span
-                                                    arrow="true" class="default_node default_leaf"></span>入住管理</td>
-                                            <td>/tenant/index</td>
-                                            <td>tenant:checkin</td>
-                                            <td><span class="label label-primary">菜单</span> </td>
-                                            <td>正常</td>
-                                            <td>1</td>
-                                            <td><a href="javascript:;" func="btnEdit" data-id="31"
-                                                    class="btn btn-success btn-xs" data-type="2"><i
-                                                        class="fa fa-edit"></i> 编辑</a>&nbsp;<a href="javascript:;"
-                                                    func="btnAddFun" data-id="31" class="btn btn-warning btn-xs"
-                                                    data-type="4" data-name="入住管理"><i class="fa fa-plus"></i>
-                                                    添加按钮</a>&nbsp;<a href="javascript:;" func="del" data-id="31"
-                                                    class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> 删除</a>
-                                            </td>
-                                        </tr>
-                                        <tr id="32" pid="30" class="30" previd="31" depth="2">
-                                            <td><span class="prev_sp"><span
-                                                        class="default_node default_vertline"></span></span><span
-                                                    arrow="true" class="default_node default_leaf"></span>退房管理</td>
-                                            <td></td>
-                                            <td>tenant:checkout</td>
-                                            <td><span class="label label-primary">菜单</span> </td>
-                                            <td>正常</td>
-                                            <td>2</td>
-                                            <td><a href="javascript:;" func="btnEdit" data-id="32"
-                                                    class="btn btn-success btn-xs" data-type="2"><i
-                                                        class="fa fa-edit"></i> 编辑</a>&nbsp;<a href="javascript:;"
-                                                    func="btnAddFun" data-id="32" class="btn btn-warning btn-xs"
-                                                    data-type="4" data-name="退房管理"><i class="fa fa-plus"></i>
-                                                    添加按钮</a>&nbsp;<a href="javascript:;" func="del" data-id="32"
-                                                    class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> 删除</a>
-                                            </td>
-                                        </tr>
-                                        <tr id="33" pid="30" class="30" previd="32" depth="2">
-                                            <td><span class="prev_sp"><span
-                                                        class="default_node default_vertline"></span></span><span
-                                                    arrow="true" class="default_node default_leaf"></span>车位管理</td>
-                                            <td></td>
-                                            <td>tenant:carport</td>
-                                            <td><span class="label label-primary">菜单</span> </td>
-                                            <td>正常</td>
-                                            <td>3</td>
-                                            <td><a href="javascript:;" func="btnEdit" data-id="33"
-                                                    class="btn btn-success btn-xs" data-type="2"><i
-                                                        class="fa fa-edit"></i> 编辑</a>&nbsp;<a href="javascript:;"
-                                                    func="btnAddFun" data-id="33" class="btn btn-warning btn-xs"
-                                                    data-type="4" data-name="车位管理"><i class="fa fa-plus"></i>
-                                                    添加按钮</a>&nbsp;<a href="javascript:;" func="del" data-id="33"
-                                                    class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> 删除</a>
-                                            </td>
-                                        </tr>
-                                        <tr id="34" pid="30" class="30" previd="33" depth="2">
-                                            <td><span class="prev_sp"><span
-                                                        class="default_node default_vertline"></span></span><span
-                                                    arrow="true" class="default_node default_leaf"></span>缴费管理</td>
-                                            <td></td>
-                                            <td>tenant:fee</td>
-                                            <td><span class="label label-primary">菜单</span> </td>
-                                            <td>正常</td>
-                                            <td>4</td>
-                                            <td><a href="javascript:;" func="btnEdit" data-id="34"
-                                                    class="btn btn-success btn-xs" data-type="2"><i
-                                                        class="fa fa-edit"></i> 编辑</a>&nbsp;<a href="javascript:;"
-                                                    func="btnAddFun" data-id="34" class="btn btn-warning btn-xs"
-                                                    data-type="4" data-name="缴费管理"><i class="fa fa-plus"></i>
-                                                    添加按钮</a>&nbsp;<a href="javascript:;" func="del" data-id="34"
-                                                    class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> 删除</a>
-                                            </td>
-                                        </tr>
-                                        <tr id="35" pid="30" class="30" previd="34" islastone="true" depth="2">
-                                            <td><span class="prev_sp"><span
-                                                        class="default_node default_vertline"></span></span><span
-                                                    arrow="true" class="default_node default_last_leaf"></span>访客管理</td>
-                                            <td></td>
-                                            <td>tenant:carport</td>
-                                            <td><span class="label label-primary">菜单</span> </td>
-                                            <td>正常</td>
-                                            <td>5</td>
-                                            <td><a href="javascript:;" func="btnEdit" data-id="35"
-                                                    class="btn btn-success btn-xs" data-type="2"><i
-                                                        class="fa fa-edit"></i> 编辑</a>&nbsp;<a href="javascript:;"
-                                                    func="btnAddFun" data-id="35" class="btn btn-warning btn-xs"
-                                                    data-type="4" data-name="访客管理"><i class="fa fa-plus"></i>
-                                                    添加按钮</a>&nbsp;<a href="javascript:;" func="del" data-id="35"
-                                                    class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> 删除</a>
-                                            </td>
-                                        </tr>
-                                        <tr id="19" haschild="true" previd="30" depth="1">
-                                            <td><span class="prev_sp"></span><span arrow="true"
-                                                    class="default_active_node default_open"></span>进销存管理</td>
-                                            <td></td>
-                                            <td>erp</td>
-                                            <td> <span class="label label-success">目录</span> </td>
-                                            <td>正常</td>
-                                            <td>4</td>
-                                            <td><a href="javascript:;" func="btnEdit" data-id="19"
-                                                    class="btn btn-success btn-xs" data-type="2"><i
-                                                        class="fa fa-edit"></i> 编辑</a>&nbsp;<a href="javascript:;"
-                                                    func="btnAddSub" data-id="19" class="btn btn-primary btn-xs"
-                                                    data-type="3" data-name="进销存管理"><i class="fa fa-plus"></i>
-                                                    添加子类</a>&nbsp;<a href="javascript:;" func="del" data-id="19"
-                                                    class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> 删除</a>
-                                            </td>
-                                        </tr>
-                                        <tr id="20" pid="19" class="19" haschild="true" isfirstone="true" depth="2">
-                                            <td><span class="prev_sp"><span
-                                                        class="default_node default_vertline"></span></span><span
-                                                    arrow="true" class="default_active_node default_open"></span>商品信息管理
-                                            </td>
-                                            <td>/commodity/index</td>
-                                            <td>commodity</td>
-                                            <td><span class="label label-primary">菜单</span> </td>
-                                            <td>正常</td>
-                                            <td>1</td>
-                                            <td><a href="javascript:;" func="btnEdit" data-id="20"
-                                                    class="btn btn-success btn-xs" data-type="2"><i
-                                                        class="fa fa-edit"></i> 编辑</a>&nbsp;<a href="javascript:;"
-                                                    func="btnAddFun" data-id="20" class="btn btn-warning btn-xs"
-                                                    data-type="4" data-name="商品信息管理"><i class="fa fa-plus"></i>
-                                                    添加按钮</a>&nbsp;<a href="javascript:;" func="del" data-id="20"
-                                                    class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> 删除</a>
-                                            </td>
-                                        </tr>
-                                        <tr id="9904" pid="20" class="20" isfirstone="true" depth="3">
-                                            <td><span class="prev_sp"><span
-                                                        class="default_node default_vertline"></span><span
-                                                        class="default_node default_vertline"></span></span><span
-                                                    arrow="true" class="default_node default_leaf"></span>页面查看</td>
-                                            <td></td>
-                                            <td>commodity:index:view</td>
-                                            <td><span class="label  label-warning">功能</span> </td>
-                                            <td>正常</td>
-                                            <td>0</td>
-                                            <td><a href="javascript:;" func="btnEditFun" data-id="9904"
-                                                    class="btn btn-success btn-xs" data-type="5"><i
-                                                        class="fa fa-edit"></i> 编辑</a>&nbsp;<a href="javascript:;"
-                                                    func="delFun" data-id="9904" class="btn btn-danger btn-xs"><i
-                                                        class="fa fa-trash-o"></i> 删除</a></td>
-                                        </tr>
-                                        <tr id="9905" pid="20" class="20" previd="9904" depth="3">
-                                            <td><span class="prev_sp"><span
-                                                        class="default_node default_vertline"></span><span
-                                                        class="default_node default_vertline"></span></span><span
-                                                    arrow="true" class="default_node default_leaf"></span>搜索</td>
-                                            <td></td>
-                                            <td>commodity:index:search</td>
-                                            <td><span class="label  label-warning">功能</span> </td>
-                                            <td>正常</td>
-                                            <td>0</td>
-                                            <td><a href="javascript:;" func="btnEditFun" data-id="9905"
-                                                    class="btn btn-success btn-xs" data-type="5"><i
-                                                        class="fa fa-edit"></i> 编辑</a>&nbsp;<a href="javascript:;"
-                                                    func="delFun" data-id="9905" class="btn btn-danger btn-xs"><i
-                                                        class="fa fa-trash-o"></i> 删除</a></td>
-                                        </tr>
-                                        <tr id="9906" pid="20" class="20" previd="9905" depth="3">
-                                            <td><span class="prev_sp"><span
-                                                        class="default_node default_vertline"></span><span
-                                                        class="default_node default_vertline"></span></span><span
-                                                    arrow="true" class="default_node default_leaf"></span>添加</td>
-                                            <td></td>
-                                            <td>commodity:index:add</td>
-                                            <td><span class="label  label-warning">功能</span> </td>
-                                            <td>正常</td>
-                                            <td>0</td>
-                                            <td><a href="javascript:;" func="btnEditFun" data-id="9906"
-                                                    class="btn btn-success btn-xs" data-type="5"><i
-                                                        class="fa fa-edit"></i> 编辑</a>&nbsp;<a href="javascript:;"
-                                                    func="delFun" data-id="9906" class="btn btn-danger btn-xs"><i
-                                                        class="fa fa-trash-o"></i> 删除</a></td>
-                                        </tr>
-                                        <tr id="9907" pid="20" class="20" previd="9906" depth="3">
-                                            <td><span class="prev_sp"><span
-                                                        class="default_node default_vertline"></span><span
-                                                        class="default_node default_vertline"></span></span><span
-                                                    arrow="true" class="default_node default_leaf"></span>编辑</td>
-                                            <td></td>
-                                            <td>commodity:index:edit</td>
-                                            <td><span class="label  label-warning">功能</span> </td>
-                                            <td>正常</td>
-                                            <td>0</td>
-                                            <td><a href="javascript:;" func="btnEditFun" data-id="9907"
-                                                    class="btn btn-success btn-xs" data-type="5"><i
-                                                        class="fa fa-edit"></i> 编辑</a>&nbsp;<a href="javascript:;"
-                                                    func="delFun" data-id="9907" class="btn btn-danger btn-xs"><i
-                                                        class="fa fa-trash-o"></i> 删除</a></td>
-                                        </tr>
-                                        <tr id="9908" pid="20" class="20" previd="9907" depth="3">
-                                            <td><span class="prev_sp"><span
-                                                        class="default_node default_vertline"></span><span
-                                                        class="default_node default_vertline"></span></span><span
-                                                    arrow="true" class="default_node default_leaf"></span>删除</td>
-                                            <td></td>
-                                            <td>commodity:index:del</td>
-                                            <td><span class="label  label-warning">功能</span> </td>
-                                            <td>正常</td>
-                                            <td>0</td>
-                                            <td><a href="javascript:;" func="btnEditFun" data-id="9908"
-                                                    class="btn btn-success btn-xs" data-type="5"><i
-                                                        class="fa fa-edit"></i> 编辑</a>&nbsp;<a href="javascript:;"
-                                                    func="delFun" data-id="9908" class="btn btn-danger btn-xs"><i
-                                                        class="fa fa-trash-o"></i> 删除</a></td>
-                                        </tr>
-                                        <tr id="9909" pid="20" class="20" previd="9908" islastone="true" depth="3">
-                                            <td><span class="prev_sp"><span
-                                                        class="default_node default_vertline"></span><span
-                                                        class="default_node default_vertline"></span></span><span
-                                                    arrow="true" class="default_node default_last_leaf"></span>批量删除</td>
-                                            <td></td>
-                                            <td>commodity:index:batchDel</td>
-                                            <td><span class="label  label-warning">功能</span> </td>
-                                            <td>正常</td>
-                                            <td>0</td>
-                                            <td><a href="javascript:;" func="btnEditFun" data-id="9909"
-                                                    class="btn btn-success btn-xs" data-type="5"><i
-                                                        class="fa fa-edit"></i> 编辑</a>&nbsp;<a href="javascript:;"
-                                                    func="delFun" data-id="9909" class="btn btn-danger btn-xs"><i
-                                                        class="fa fa-trash-o"></i> 删除</a></td>
-                                        </tr>
-                                        <tr id="21" pid="19" class="19" previd="20" depth="2">
-                                            <td><span class="prev_sp"><span
-                                                        class="default_node default_vertline"></span></span><span
-                                                    arrow="true" class="default_node default_leaf"></span>入库管理</td>
-                                            <td>/commodity/storage</td>
-                                            <td>commodity_storage</td>
-                                            <td><span class="label label-primary">菜单</span> </td>
-                                            <td>正常</td>
-                                            <td>2</td>
-                                            <td><a href="javascript:;" func="btnEdit" data-id="21"
-                                                    class="btn btn-success btn-xs" data-type="2"><i
-                                                        class="fa fa-edit"></i> 编辑</a>&nbsp;<a href="javascript:;"
-                                                    func="btnAddFun" data-id="21" class="btn btn-warning btn-xs"
-                                                    data-type="4" data-name="入库管理"><i class="fa fa-plus"></i>
-                                                    添加按钮</a>&nbsp;<a href="javascript:;" func="del" data-id="21"
-                                                    class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> 删除</a>
-                                            </td>
-                                        </tr>
-                                        <tr id="24" pid="19" class="19" previd="21" depth="2">
-                                            <td><span class="prev_sp"><span
-                                                        class="default_node default_vertline"></span></span><span
-                                                    arrow="true" class="default_node default_leaf"></span>出库管理</td>
-                                            <td>/commodity/outstock</td>
-                                            <td>outstock</td>
-                                            <td><span class="label label-primary">菜单</span> </td>
-                                            <td>正常</td>
-                                            <td>3</td>
-                                            <td><a href="javascript:;" func="btnEdit" data-id="24"
-                                                    class="btn btn-success btn-xs" data-type="2"><i
-                                                        class="fa fa-edit"></i> 编辑</a>&nbsp;<a href="javascript:;"
-                                                    func="btnAddFun" data-id="24" class="btn btn-warning btn-xs"
-                                                    data-type="4" data-name="出库管理"><i class="fa fa-plus"></i>
-                                                    添加按钮</a>&nbsp;<a href="javascript:;" func="del" data-id="24"
-                                                    class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> 删除</a>
-                                            </td>
-                                        </tr>
-                                        <tr id="25" pid="19" class="19" previd="24" islastone="true" depth="2">
-                                            <td><span class="prev_sp"><span
-                                                        class="default_node default_vertline"></span></span><span
-                                                    arrow="true" class="default_node default_last_leaf"></span>库存管理</td>
-                                            <td>/commodity/stock</td>
-                                            <td>stock</td>
-                                            <td><span class="label label-primary">菜单</span> </td>
-                                            <td>正常</td>
-                                            <td>4</td>
-                                            <td><a href="javascript:;" func="btnEdit" data-id="25"
-                                                    class="btn btn-success btn-xs" data-type="2"><i
-                                                        class="fa fa-edit"></i> 编辑</a>&nbsp;<a href="javascript:;"
-                                                    func="btnAddFun" data-id="25" class="btn btn-warning btn-xs"
-                                                    data-type="4" data-name="库存管理"><i class="fa fa-plus"></i>
-                                                    添加按钮</a>&nbsp;<a href="javascript:;" func="del" data-id="25"
-                                                    class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> 删除</a>
-                                            </td>
-                                        </tr>
-                                        <tr id="26" haschild="true" previd="19" depth="1">
-                                            <td><span class="prev_sp"></span><span arrow="true"
-                                                    class="default_active_node default_open"></span> 活动管理</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td> <span class="label label-success">目录</span> </td>
-                                            <td>正常</td>
-                                            <td>5</td>
-                                            <td><a href="javascript:;" func="btnEdit" data-id="26"
-                                                    class="btn btn-success btn-xs" data-type="2"><i
-                                                        class="fa fa-edit"></i> 编辑</a>&nbsp;<a href="javascript:;"
-                                                    func="btnAddSub" data-id="26" class="btn btn-primary btn-xs"
-                                                    data-type="3" data-name=" 活动管理"><i class="fa fa-plus"></i>
-                                                    添加子类</a>&nbsp;<a href="javascript:;" func="del" data-id="26"
-                                                    class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> 删除</a>
-                                            </td>
-                                        </tr>
-                                        <tr id="28" pid="26" class="26" isfirstone="true" islastone="true" depth="2">
-                                            <td><span class="prev_sp"><span
-                                                        class="default_node default_vertline"></span></span><span
-                                                    arrow="true" class="default_node default_last_leaf"></span>活动列表</td>
-                                            <td>/activity/list</td>
-                                            <td></td>
-                                            <td><span class="label label-primary">菜单</span> </td>
-                                            <td>正常</td>
-                                            <td>1</td>
-                                            <td><a href="javascript:;" func="btnEdit" data-id="28"
-                                                    class="btn btn-success btn-xs" data-type="2"><i
-                                                        class="fa fa-edit"></i> 编辑</a>&nbsp;<a href="javascript:;"
-                                                    func="btnAddFun" data-id="28" class="btn btn-warning btn-xs"
-                                                    data-type="4" data-name="活动列表"><i class="fa fa-plus"></i>
-                                                    添加按钮</a>&nbsp;<a href="javascript:;" func="del" data-id="28"
-                                                    class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> 删除</a>
-                                            </td>
-                                        </tr>
-                                        <tr id="15" haschild="true" previd="26" islastone="true" depth="1">
-                                            <td><span class="prev_sp"></span><span arrow="true"
-                                                    class="default_active_node default_last_open"></span>权限管理</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td> <span class="label label-success">目录</span> </td>
-                                            <td>正常</td>
-                                            <td>10</td>
-                                            <td><a href="javascript:;" func="btnEdit" data-id="15"
-                                                    class="btn btn-success btn-xs" data-type="2"><i
-                                                        class="fa fa-edit"></i> 编辑</a>&nbsp;<a href="javascript:;"
-                                                    func="btnAddSub" data-id="15" class="btn btn-primary btn-xs"
-                                                    data-type="3" data-name="权限管理"><i class="fa fa-plus"></i>
-                                                    添加子类</a>&nbsp;<a href="javascript:;" func="del" data-id="15"
-                                                    class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> 删除</a>
-                                            </td>
-                                        </tr>
-                                        <tr id="16" pid="15" class="15" isfirstone="true" depth="2">
-                                            <td><span class="prev_sp"><span
-                                                        class="default_node default_blank"></span></span><span
-                                                    arrow="true" class="default_node default_leaf"></span>用户管理</td>
-                                            <td>/system/userList</td>
-                                            <td>userList</td>
-                                            <td><span class="label label-primary">菜单</span> </td>
-                                            <td>正常</td>
-                                            <td>1</td>
-                                            <td><a href="javascript:;" func="btnEdit" data-id="16"
-                                                    class="btn btn-success btn-xs" data-type="2"><i
-                                                        class="fa fa-edit"></i> 编辑</a>&nbsp;<a href="javascript:;"
-                                                    func="btnAddFun" data-id="16" class="btn btn-warning btn-xs"
-                                                    data-type="4" data-name="用户管理"><i class="fa fa-plus"></i>
-                                                    添加按钮</a>&nbsp;<a href="javascript:;" func="del" data-id="16"
-                                                    class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> 删除</a>
-                                            </td>
-                                        </tr>
-                                        <tr id="17" pid="15" class="15" haschild="true" previd="16" depth="2">
-                                            <td><span class="prev_sp"><span
-                                                        class="default_node default_blank"></span></span><span
-                                                    arrow="true" class="default_active_node default_open"></span>角色管理
-                                            </td>
-                                            <td>/system/roleList</td>
-                                            <td>roleList</td>
-                                            <td><span class="label label-primary">菜单</span> </td>
-                                            <td>正常</td>
-                                            <td>2</td>
-                                            <td><a href="javascript:;" func="btnEdit" data-id="17"
-                                                    class="btn btn-success btn-xs" data-type="2"><i
-                                                        class="fa fa-edit"></i> 编辑</a>&nbsp;<a href="javascript:;"
-                                                    func="btnAddFun" data-id="17" class="btn btn-warning btn-xs"
-                                                    data-type="4" data-name="角色管理"><i class="fa fa-plus"></i>
-                                                    添加按钮</a>&nbsp;<a href="javascript:;" func="del" data-id="17"
-                                                    class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> 删除</a>
-                                            </td>
-                                        </tr>
-                                        <tr id="9901" pid="17" class="17" isfirstone="true" depth="3">
-                                            <td><span class="prev_sp"><span
-                                                        class="default_node default_blank"></span><span
-                                                        class="default_node default_vertline"></span></span><span
-                                                    arrow="true" class="default_node default_leaf"></span>添加</td>
-                                            <td></td>
-                                            <td>add11</td>
-                                            <td><span class="label  label-warning">功能</span> </td>
-                                            <td>正常</td>
-                                            <td>0</td>
-                                            <td><a href="javascript:;" func="btnEditFun" data-id="9901"
-                                                    class="btn btn-success btn-xs" data-type="5"><i
-                                                        class="fa fa-edit"></i> 编辑</a>&nbsp;<a href="javascript:;"
-                                                    func="delFun" data-id="9901" class="btn btn-danger btn-xs"><i
-                                                        class="fa fa-trash-o"></i> 删除</a></td>
-                                        </tr>
-                                        <tr id="9903" pid="17" class="17" previd="9901" islastone="true" depth="3">
-                                            <td><span class="prev_sp"><span
-                                                        class="default_node default_blank"></span><span
-                                                        class="default_node default_vertline"></span></span><span
-                                                    arrow="true" class="default_node default_last_leaf"></span>查看</td>
-                                            <td></td>
-                                            <td>view</td>
-                                            <td><span class="label  label-warning">功能</span> </td>
-                                            <td>正常</td>
-                                            <td>0</td>
-                                            <td><a href="javascript:;" func="btnEditFun" data-id="9903"
-                                                    class="btn btn-success btn-xs" data-type="5"><i
-                                                        class="fa fa-edit"></i> 编辑</a>&nbsp;<a href="javascript:;"
-                                                    func="delFun" data-id="9903" class="btn btn-danger btn-xs"><i
-                                                        class="fa fa-trash-o"></i> 删除</a></td>
-                                        </tr>
-                                        <tr id="18" pid="15" class="15" previd="17" depth="2">
-                                            <td><span class="prev_sp"><span
-                                                        class="default_node default_blank"></span></span><span
-                                                    arrow="true" class="default_node default_leaf"></span>系统资源</td>
-                                            <td>/system/resourceList</td>
-                                            <td>resourceList</td>
-                                            <td><span class="label label-primary">菜单</span> </td>
-                                            <td>正常</td>
-                                            <td>3</td>
-                                            <td><a href="javascript:;" func="btnEdit" data-id="18"
-                                                    class="btn btn-success btn-xs" data-type="2"><i
-                                                        class="fa fa-edit"></i> 编辑</a>&nbsp;<a href="javascript:;"
-                                                    func="btnAddFun" data-id="18" class="btn btn-warning btn-xs"
-                                                    data-type="4" data-name="系统资源"><i class="fa fa-plus"></i>
-                                                    添加按钮</a>&nbsp;<a href="javascript:;" func="del" data-id="18"
-                                                    class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> 删除</a>
-                                            </td>
-                                        </tr>
-                                        <tr id="23" pid="15" class="15" previd="18" depth="2">
-                                            <td><span class="prev_sp"><span
-                                                        class="default_node default_blank"></span></span><span
-                                                    arrow="true" class="default_node default_leaf"></span>监控中心</td>
-                                            <td>/druid/</td>
-                                            <td>druid</td>
-                                            <td><span class="label label-primary">菜单</span> </td>
-                                            <td>正常</td>
-                                            <td>4</td>
-                                            <td><a href="javascript:;" func="btnEdit" data-id="23"
-                                                    class="btn btn-success btn-xs" data-type="2"><i
-                                                        class="fa fa-edit"></i> 编辑</a>&nbsp;<a href="javascript:;"
-                                                    func="btnAddFun" data-id="23" class="btn btn-warning btn-xs"
-                                                    data-type="4" data-name="监控中心"><i class="fa fa-plus"></i>
-                                                    添加按钮</a>&nbsp;<a href="javascript:;" func="del" data-id="23"
-                                                    class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> 删除</a>
-                                            </td>
-                                        </tr>
-                                        <tr id="29" pid="15" class="15" previd="23" islastone="true" depth="2">
-                                            <td><span class="prev_sp"><span
-                                                        class="default_node default_blank"></span></span><span
-                                                    arrow="true" class="default_node default_last_leaf"></span>APP管理
-                                            </td>
-                                            <td>/app/index</td>
-                                            <td>app</td>
-                                            <td><span class="label label-primary">菜单</span> </td>
-                                            <td>正常</td>
-                                            <td>5</td>
-                                            <td><a href="javascript:;" func="btnEdit" data-id="29"
-                                                    class="btn btn-success btn-xs" data-type="2"><i
-                                                        class="fa fa-edit"></i> 编辑</a>&nbsp;<a href="javascript:;"
-                                                    func="btnAddFun" data-id="29" class="btn btn-warning btn-xs"
-                                                    data-type="4" data-name="APP管理"><i class="fa fa-plus"></i>
-                                                    添加按钮</a>&nbsp;<a href="javascript:;" func="del" data-id="29"
-                                                    class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> 删除</a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <div id="datalist_wrapper"
+                                    class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+                                    <div class="row">
+                                        <div class="col-sm-6"></div>
+                                        <div class="col-sm-6"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <table id="datalist"
+                                                class="table table-bordered table-striped table-hover tree_table"
+                                                width="100%">
+                                                <thead>
+                                                    <tr>
+                                                        <th width="200">资源名称</th>
+                                                        <th>链接地址</th>
+                                                        <th>链接编码</th>
+                                                        <th width="120">类型</th>
+                                                        <th width="120">状态</th>
+                                                        <th width="120">排序</th>
+                                                        <th width="240">操作</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="datalist_body">
+                                                    <tr id="1" haschild="true" previd="" depth="1">
+                                                        <td><span class="prev_sp"></span><span arrow="true"
+                                                                class="default_active_node default_open"></span>基本信息设置
+                                                        </td>
+                                                        <td></td>
+                                                        <td>baseInfo</td>
+                                                        <td> <span class="label label-success">目录</span> </td>
+                                                        <td>正常</td>
+                                                        <td>1</td>
+                                                        <td><a href="javascript:;" func="btnEdit" data-id="1"
+                                                                class="btn btn-success btn-xs" data-type="2"><i
+                                                                    class="fa fa-edit"></i> 编辑</a>&nbsp;<a
+                                                                href="javascript:;" func="btnAddSub" data-id="1"
+                                                                class="btn btn-primary btn-xs" data-type="3"
+                                                                data-name="基本信息设置"><i class="fa fa-plus"></i>
+                                                                添加子类</a>&nbsp;<a href="javascript:;" func="del"
+                                                                data-id="1" class="btn btn-danger btn-xs"><i
+                                                                    class="fa fa-trash-o"></i> 删除</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="4" pid="1" class="1" isfirstone="true" depth="2">
+                                                        <td><span class="prev_sp"><span
+                                                                    class="default_node default_vertline"></span></span><span
+                                                                arrow="true"
+                                                                class="default_node default_leaf"></span>服务规约设置</td>
+                                                        <td>/statute/service</td>
+                                                        <td>service</td>
+                                                        <td><span class="label label-primary">菜单</span> </td>
+                                                        <td>正常</td>
+                                                        <td>1</td>
+                                                        <td><a href="javascript:;" func="btnEdit" data-id="4"
+                                                                class="btn btn-success btn-xs" data-type="2"><i
+                                                                    class="fa fa-edit"></i> 编辑</a>&nbsp;<a
+                                                                href="javascript:;" func="btnAddFun" data-id="4"
+                                                                class="btn btn-warning btn-xs" data-type="4"
+                                                                data-name="服务规约设置"><i class="fa fa-plus"></i>
+                                                                添加按钮</a>&nbsp;<a href="javascript:;" func="del"
+                                                                data-id="4" class="btn btn-danger btn-xs"><i
+                                                                    class="fa fa-trash-o"></i> 删除</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="3" pid="1" class="1" previd="4" depth="2">
+                                                        <td><span class="prev_sp"><span
+                                                                    class="default_node default_vertline"></span></span><span
+                                                                arrow="true"
+                                                                class="default_node default_leaf"></span>停车费用设置</td>
+                                                        <td>/parking/setting</td>
+                                                        <td>setting</td>
+                                                        <td><span class="label label-primary">菜单</span> </td>
+                                                        <td>正常</td>
+                                                        <td>2</td>
+                                                        <td><a href="javascript:;" func="btnEdit" data-id="3"
+                                                                class="btn btn-success btn-xs" data-type="2"><i
+                                                                    class="fa fa-edit"></i> 编辑</a>&nbsp;<a
+                                                                href="javascript:;" func="btnAddFun" data-id="3"
+                                                                class="btn btn-warning btn-xs" data-type="4"
+                                                                data-name="停车费用设置"><i class="fa fa-plus"></i>
+                                                                添加按钮</a>&nbsp;<a href="javascript:;" func="del"
+                                                                data-id="3" class="btn btn-danger btn-xs"><i
+                                                                    class="fa fa-trash-o"></i> 删除</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="6" pid="1" class="1" previd="3" depth="2">
+                                                        <td><span class="prev_sp"><span
+                                                                    class="default_node default_vertline"></span></span><span
+                                                                arrow="true"
+                                                                class="default_node default_leaf"></span>维修物料管理</td>
+                                                        <td>/materiel/list</td>
+                                                        <td>materiel</td>
+                                                        <td><span class="label label-primary">菜单</span> </td>
+                                                        <td>正常</td>
+                                                        <td>3</td>
+                                                        <td><a href="javascript:;" func="btnEdit" data-id="6"
+                                                                class="btn btn-success btn-xs" data-type="2"><i
+                                                                    class="fa fa-edit"></i> 编辑</a>&nbsp;<a
+                                                                href="javascript:;" func="btnAddFun" data-id="6"
+                                                                class="btn btn-warning btn-xs" data-type="4"
+                                                                data-name="维修物料管理"><i class="fa fa-plus"></i>
+                                                                添加按钮</a>&nbsp;<a href="javascript:;" func="del"
+                                                                data-id="6" class="btn btn-danger btn-xs"><i
+                                                                    class="fa fa-trash-o"></i> 删除</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="7" pid="1" class="1" previd="6" depth="2">
+                                                        <td><span class="prev_sp"><span
+                                                                    class="default_node default_vertline"></span></span><span
+                                                                arrow="true"
+                                                                class="default_node default_leaf"></span>部门管理</td>
+                                                        <td>/organization/department</td>
+                                                        <td>department</td>
+                                                        <td><span class="label label-primary">菜单</span> </td>
+                                                        <td>正常</td>
+                                                        <td>4</td>
+                                                        <td><a href="javascript:;" func="btnEdit" data-id="7"
+                                                                class="btn btn-success btn-xs" data-type="2"><i
+                                                                    class="fa fa-edit"></i> 编辑</a>&nbsp;<a
+                                                                href="javascript:;" func="btnAddFun" data-id="7"
+                                                                class="btn btn-warning btn-xs" data-type="4"
+                                                                data-name="部门管理"><i class="fa fa-plus"></i>
+                                                                添加按钮</a>&nbsp;<a href="javascript:;" func="del"
+                                                                data-id="7" class="btn btn-danger btn-xs"><i
+                                                                    class="fa fa-trash-o"></i> 删除</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="22" pid="1" class="1" previd="7" depth="2">
+                                                        <td><span class="prev_sp"><span
+                                                                    class="default_node default_vertline"></span></span><span
+                                                                arrow="true"
+                                                                class="default_node default_leaf"></span>在岗人员管理</td>
+                                                        <td>/organization/staff</td>
+                                                        <td>staff</td>
+                                                        <td><span class="label label-primary">菜单</span> </td>
+                                                        <td>正常</td>
+                                                        <td>5</td>
+                                                        <td><a href="javascript:;" func="btnEdit" data-id="22"
+                                                                class="btn btn-success btn-xs" data-type="2"><i
+                                                                    class="fa fa-edit"></i> 编辑</a>&nbsp;<a
+                                                                href="javascript:;" func="btnAddFun" data-id="22"
+                                                                class="btn btn-warning btn-xs" data-type="4"
+                                                                data-name="在岗人员管理"><i class="fa fa-plus"></i>
+                                                                添加按钮</a>&nbsp;<a href="javascript:;" func="del"
+                                                                data-id="22" class="btn btn-danger btn-xs"><i
+                                                                    class="fa fa-trash-o"></i> 删除</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="12" pid="1" class="1" previd="22" depth="2">
+                                                        <td><span class="prev_sp"><span
+                                                                    class="default_node default_vertline"></span></span><span
+                                                                arrow="true"
+                                                                class="default_node default_leaf"></span>商品分类管理</td>
+                                                        <td>/category/list</td>
+                                                        <td>categorylist</td>
+                                                        <td><span class="label label-primary">菜单</span> </td>
+                                                        <td>正常</td>
+                                                        <td>6</td>
+                                                        <td><a href="javascript:;" func="btnEdit" data-id="12"
+                                                                class="btn btn-success btn-xs" data-type="2"><i
+                                                                    class="fa fa-edit"></i> 编辑</a>&nbsp;<a
+                                                                href="javascript:;" func="btnAddFun" data-id="12"
+                                                                class="btn btn-warning btn-xs" data-type="4"
+                                                                data-name="商品分类管理"><i class="fa fa-plus"></i>
+                                                                添加按钮</a>&nbsp;<a href="javascript:;" func="del"
+                                                                data-id="12" class="btn btn-danger btn-xs"><i
+                                                                    class="fa fa-trash-o"></i> 删除</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="5" pid="1" class="1" previd="12" islastone="true" depth="2">
+                                                        <td><span class="prev_sp"><span
+                                                                    class="default_node default_vertline"></span></span><span
+                                                                arrow="true"
+                                                                class="default_node default_last_leaf"></span>品牌管理</td>
+                                                        <td>/brand/list</td>
+                                                        <td>brand</td>
+                                                        <td><span class="label label-primary">菜单</span> </td>
+                                                        <td>正常</td>
+                                                        <td>7</td>
+                                                        <td><a href="javascript:;" func="btnEdit" data-id="5"
+                                                                class="btn btn-success btn-xs" data-type="2"><i
+                                                                    class="fa fa-edit"></i> 编辑</a>&nbsp;<a
+                                                                href="javascript:;" func="btnAddFun" data-id="5"
+                                                                class="btn btn-warning btn-xs" data-type="4"
+                                                                data-name="品牌管理"><i class="fa fa-plus"></i>
+                                                                添加按钮</a>&nbsp;<a href="javascript:;" func="del"
+                                                                data-id="5" class="btn btn-danger btn-xs"><i
+                                                                    class="fa fa-trash-o"></i> 删除</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="13" haschild="true" previd="1" depth="1">
+                                                        <td><span class="prev_sp"></span><span arrow="true"
+                                                                class="default_active_node default_open"></span>供应商管理
+                                                        </td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td> <span class="label label-success">目录</span> </td>
+                                                        <td>正常</td>
+                                                        <td>2</td>
+                                                        <td><a href="javascript:;" func="btnEdit" data-id="13"
+                                                                class="btn btn-success btn-xs" data-type="2"><i
+                                                                    class="fa fa-edit"></i> 编辑</a>&nbsp;<a
+                                                                href="javascript:;" func="btnAddSub" data-id="13"
+                                                                class="btn btn-primary btn-xs" data-type="3"
+                                                                data-name="供应商管理"><i class="fa fa-plus"></i>
+                                                                添加子类</a>&nbsp;<a href="javascript:;" func="del"
+                                                                data-id="13" class="btn btn-danger btn-xs"><i
+                                                                    class="fa fa-trash-o"></i> 删除</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="14" pid="13" class="13" isfirstone="true" islastone="true"
+                                                        depth="2">
+                                                        <td><span class="prev_sp"><span
+                                                                    class="default_node default_vertline"></span></span><span
+                                                                arrow="true"
+                                                                class="default_node default_last_leaf"></span>供应商管理
+                                                        </td>
+                                                        <td>/supplier/list</td>
+                                                        <td>supplierlist</td>
+                                                        <td><span class="label label-primary">菜单</span> </td>
+                                                        <td>正常</td>
+                                                        <td>1</td>
+                                                        <td><a href="javascript:;" func="btnEdit" data-id="14"
+                                                                class="btn btn-success btn-xs" data-type="2"><i
+                                                                    class="fa fa-edit"></i> 编辑</a>&nbsp;<a
+                                                                href="javascript:;" func="btnAddFun" data-id="14"
+                                                                class="btn btn-warning btn-xs" data-type="4"
+                                                                data-name="供应商管理"><i class="fa fa-plus"></i>
+                                                                添加按钮</a>&nbsp;<a href="javascript:;" func="del"
+                                                                data-id="14" class="btn btn-danger btn-xs"><i
+                                                                    class="fa fa-trash-o"></i> 删除</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="30" haschild="true" previd="13" depth="1">
+                                                        <td><span class="prev_sp"></span><span arrow="true"
+                                                                class="default_active_node default_open"></span>住户管理
+                                                        </td>
+                                                        <td></td>
+                                                        <td>tenant</td>
+                                                        <td> <span class="label label-success">目录</span> </td>
+                                                        <td>正常</td>
+                                                        <td>3</td>
+                                                        <td><a href="javascript:;" func="btnEdit" data-id="30"
+                                                                class="btn btn-success btn-xs" data-type="2"><i
+                                                                    class="fa fa-edit"></i> 编辑</a>&nbsp;<a
+                                                                href="javascript:;" func="btnAddSub" data-id="30"
+                                                                class="btn btn-primary btn-xs" data-type="3"
+                                                                data-name="住户管理"><i class="fa fa-plus"></i>
+                                                                添加子类</a>&nbsp;<a href="javascript:;" func="del"
+                                                                data-id="30" class="btn btn-danger btn-xs"><i
+                                                                    class="fa fa-trash-o"></i> 删除</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="31" pid="30" class="30" isfirstone="true" depth="2">
+                                                        <td><span class="prev_sp"><span
+                                                                    class="default_node default_vertline"></span></span><span
+                                                                arrow="true"
+                                                                class="default_node default_leaf"></span>入住管理</td>
+                                                        <td>/tenant/index</td>
+                                                        <td>tenant:checkin</td>
+                                                        <td><span class="label label-primary">菜单</span> </td>
+                                                        <td>正常</td>
+                                                        <td>1</td>
+                                                        <td><a href="javascript:;" func="btnEdit" data-id="31"
+                                                                class="btn btn-success btn-xs" data-type="2"><i
+                                                                    class="fa fa-edit"></i> 编辑</a>&nbsp;<a
+                                                                href="javascript:;" func="btnAddFun" data-id="31"
+                                                                class="btn btn-warning btn-xs" data-type="4"
+                                                                data-name="入住管理"><i class="fa fa-plus"></i>
+                                                                添加按钮</a>&nbsp;<a href="javascript:;" func="del"
+                                                                data-id="31" class="btn btn-danger btn-xs"><i
+                                                                    class="fa fa-trash-o"></i> 删除</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="32" pid="30" class="30" previd="31" depth="2">
+                                                        <td><span class="prev_sp"><span
+                                                                    class="default_node default_vertline"></span></span><span
+                                                                arrow="true"
+                                                                class="default_node default_leaf"></span>退房管理</td>
+                                                        <td></td>
+                                                        <td>tenant:checkout</td>
+                                                        <td><span class="label label-primary">菜单</span> </td>
+                                                        <td>正常</td>
+                                                        <td>2</td>
+                                                        <td><a href="javascript:;" func="btnEdit" data-id="32"
+                                                                class="btn btn-success btn-xs" data-type="2"><i
+                                                                    class="fa fa-edit"></i> 编辑</a>&nbsp;<a
+                                                                href="javascript:;" func="btnAddFun" data-id="32"
+                                                                class="btn btn-warning btn-xs" data-type="4"
+                                                                data-name="退房管理"><i class="fa fa-plus"></i>
+                                                                添加按钮</a>&nbsp;<a href="javascript:;" func="del"
+                                                                data-id="32" class="btn btn-danger btn-xs"><i
+                                                                    class="fa fa-trash-o"></i> 删除</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="33" pid="30" class="30" previd="32" depth="2">
+                                                        <td><span class="prev_sp"><span
+                                                                    class="default_node default_vertline"></span></span><span
+                                                                arrow="true"
+                                                                class="default_node default_leaf"></span>车位管理</td>
+                                                        <td></td>
+                                                        <td>tenant:carport</td>
+                                                        <td><span class="label label-primary">菜单</span> </td>
+                                                        <td>正常</td>
+                                                        <td>3</td>
+                                                        <td><a href="javascript:;" func="btnEdit" data-id="33"
+                                                                class="btn btn-success btn-xs" data-type="2"><i
+                                                                    class="fa fa-edit"></i> 编辑</a>&nbsp;<a
+                                                                href="javascript:;" func="btnAddFun" data-id="33"
+                                                                class="btn btn-warning btn-xs" data-type="4"
+                                                                data-name="车位管理"><i class="fa fa-plus"></i>
+                                                                添加按钮</a>&nbsp;<a href="javascript:;" func="del"
+                                                                data-id="33" class="btn btn-danger btn-xs"><i
+                                                                    class="fa fa-trash-o"></i> 删除</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="34" pid="30" class="30" previd="33" depth="2">
+                                                        <td><span class="prev_sp"><span
+                                                                    class="default_node default_vertline"></span></span><span
+                                                                arrow="true"
+                                                                class="default_node default_leaf"></span>缴费管理</td>
+                                                        <td></td>
+                                                        <td>tenant:fee</td>
+                                                        <td><span class="label label-primary">菜单</span> </td>
+                                                        <td>正常</td>
+                                                        <td>4</td>
+                                                        <td><a href="javascript:;" func="btnEdit" data-id="34"
+                                                                class="btn btn-success btn-xs" data-type="2"><i
+                                                                    class="fa fa-edit"></i> 编辑</a>&nbsp;<a
+                                                                href="javascript:;" func="btnAddFun" data-id="34"
+                                                                class="btn btn-warning btn-xs" data-type="4"
+                                                                data-name="缴费管理"><i class="fa fa-plus"></i>
+                                                                添加按钮</a>&nbsp;<a href="javascript:;" func="del"
+                                                                data-id="34" class="btn btn-danger btn-xs"><i
+                                                                    class="fa fa-trash-o"></i> 删除</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="35" pid="30" class="30" previd="34" islastone="true"
+                                                        depth="2">
+                                                        <td><span class="prev_sp"><span
+                                                                    class="default_node default_vertline"></span></span><span
+                                                                arrow="true"
+                                                                class="default_node default_last_leaf"></span>访客管理</td>
+                                                        <td></td>
+                                                        <td>tenant:carport</td>
+                                                        <td><span class="label label-primary">菜单</span> </td>
+                                                        <td>正常</td>
+                                                        <td>5</td>
+                                                        <td><a href="javascript:;" func="btnEdit" data-id="35"
+                                                                class="btn btn-success btn-xs" data-type="2"><i
+                                                                    class="fa fa-edit"></i> 编辑</a>&nbsp;<a
+                                                                href="javascript:;" func="btnAddFun" data-id="35"
+                                                                class="btn btn-warning btn-xs" data-type="4"
+                                                                data-name="访客管理"><i class="fa fa-plus"></i>
+                                                                添加按钮</a>&nbsp;<a href="javascript:;" func="del"
+                                                                data-id="35" class="btn btn-danger btn-xs"><i
+                                                                    class="fa fa-trash-o"></i> 删除</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="19" haschild="true" previd="30" depth="1">
+                                                        <td><span class="prev_sp"></span><span arrow="true"
+                                                                class="default_active_node default_open"></span>进销存管理
+                                                        </td>
+                                                        <td></td>
+                                                        <td>erp</td>
+                                                        <td> <span class="label label-success">目录</span> </td>
+                                                        <td>正常</td>
+                                                        <td>4</td>
+                                                        <td><a href="javascript:;" func="btnEdit" data-id="19"
+                                                                class="btn btn-success btn-xs" data-type="2"><i
+                                                                    class="fa fa-edit"></i> 编辑</a>&nbsp;<a
+                                                                href="javascript:;" func="btnAddSub" data-id="19"
+                                                                class="btn btn-primary btn-xs" data-type="3"
+                                                                data-name="进销存管理"><i class="fa fa-plus"></i>
+                                                                添加子类</a>&nbsp;<a href="javascript:;" func="del"
+                                                                data-id="19" class="btn btn-danger btn-xs"><i
+                                                                    class="fa fa-trash-o"></i> 删除</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="20" pid="19" class="19" haschild="true" isfirstone="true"
+                                                        depth="2">
+                                                        <td><span class="prev_sp"><span
+                                                                    class="default_node default_vertline"></span></span><span
+                                                                arrow="true"
+                                                                class="default_active_node default_open"></span>商品信息管理
+                                                        </td>
+                                                        <td>/commodity/index</td>
+                                                        <td>commodity</td>
+                                                        <td><span class="label label-primary">菜单</span> </td>
+                                                        <td>正常</td>
+                                                        <td>1</td>
+                                                        <td><a href="javascript:;" func="btnEdit" data-id="20"
+                                                                class="btn btn-success btn-xs" data-type="2"><i
+                                                                    class="fa fa-edit"></i> 编辑</a>&nbsp;<a
+                                                                href="javascript:;" func="btnAddFun" data-id="20"
+                                                                class="btn btn-warning btn-xs" data-type="4"
+                                                                data-name="商品信息管理"><i class="fa fa-plus"></i>
+                                                                添加按钮</a>&nbsp;<a href="javascript:;" func="del"
+                                                                data-id="20" class="btn btn-danger btn-xs"><i
+                                                                    class="fa fa-trash-o"></i> 删除</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="9904" pid="20" class="20" isfirstone="true" depth="3">
+                                                        <td><span class="prev_sp"><span
+                                                                    class="default_node default_vertline"></span><span
+                                                                    class="default_node default_vertline"></span></span><span
+                                                                arrow="true"
+                                                                class="default_node default_leaf"></span>页面查看</td>
+                                                        <td></td>
+                                                        <td>commodity:index:view</td>
+                                                        <td><span class="label  label-warning">功能</span> </td>
+                                                        <td>正常</td>
+                                                        <td>0</td>
+                                                        <td><a href="javascript:;" func="btnEditFun" data-id="9904"
+                                                                class="btn btn-success btn-xs" data-type="5"><i
+                                                                    class="fa fa-edit"></i> 编辑</a>&nbsp;<a
+                                                                href="javascript:;" func="delFun" data-id="9904"
+                                                                class="btn btn-danger btn-xs"><i
+                                                                    class="fa fa-trash-o"></i> 删除</a></td>
+                                                    </tr>
+                                                    <tr id="9905" pid="20" class="20" previd="9904" depth="3">
+                                                        <td><span class="prev_sp"><span
+                                                                    class="default_node default_vertline"></span><span
+                                                                    class="default_node default_vertline"></span></span><span
+                                                                arrow="true" class="default_node default_leaf"></span>搜索
+                                                        </td>
+                                                        <td></td>
+                                                        <td>commodity:index:search</td>
+                                                        <td><span class="label  label-warning">功能</span> </td>
+                                                        <td>正常</td>
+                                                        <td>0</td>
+                                                        <td><a href="javascript:;" func="btnEditFun" data-id="9905"
+                                                                class="btn btn-success btn-xs" data-type="5"><i
+                                                                    class="fa fa-edit"></i> 编辑</a>&nbsp;<a
+                                                                href="javascript:;" func="delFun" data-id="9905"
+                                                                class="btn btn-danger btn-xs"><i
+                                                                    class="fa fa-trash-o"></i> 删除</a></td>
+                                                    </tr>
+                                                    <tr id="9906" pid="20" class="20" previd="9905" depth="3">
+                                                        <td><span class="prev_sp"><span
+                                                                    class="default_node default_vertline"></span><span
+                                                                    class="default_node default_vertline"></span></span><span
+                                                                arrow="true" class="default_node default_leaf"></span>添加
+                                                        </td>
+                                                        <td></td>
+                                                        <td>commodity:index:add</td>
+                                                        <td><span class="label  label-warning">功能</span> </td>
+                                                        <td>正常</td>
+                                                        <td>0</td>
+                                                        <td><a href="javascript:;" func="btnEditFun" data-id="9906"
+                                                                class="btn btn-success btn-xs" data-type="5"><i
+                                                                    class="fa fa-edit"></i> 编辑</a>&nbsp;<a
+                                                                href="javascript:;" func="delFun" data-id="9906"
+                                                                class="btn btn-danger btn-xs"><i
+                                                                    class="fa fa-trash-o"></i> 删除</a></td>
+                                                    </tr>
+                                                    <tr id="9907" pid="20" class="20" previd="9906" depth="3">
+                                                        <td><span class="prev_sp"><span
+                                                                    class="default_node default_vertline"></span><span
+                                                                    class="default_node default_vertline"></span></span><span
+                                                                arrow="true" class="default_node default_leaf"></span>编辑
+                                                        </td>
+                                                        <td></td>
+                                                        <td>commodity:index:edit</td>
+                                                        <td><span class="label  label-warning">功能</span> </td>
+                                                        <td>正常</td>
+                                                        <td>0</td>
+                                                        <td><a href="javascript:;" func="btnEditFun" data-id="9907"
+                                                                class="btn btn-success btn-xs" data-type="5"><i
+                                                                    class="fa fa-edit"></i> 编辑</a>&nbsp;<a
+                                                                href="javascript:;" func="delFun" data-id="9907"
+                                                                class="btn btn-danger btn-xs"><i
+                                                                    class="fa fa-trash-o"></i> 删除</a></td>
+                                                    </tr>
+                                                    <tr id="9908" pid="20" class="20" previd="9907" depth="3">
+                                                        <td><span class="prev_sp"><span
+                                                                    class="default_node default_vertline"></span><span
+                                                                    class="default_node default_vertline"></span></span><span
+                                                                arrow="true" class="default_node default_leaf"></span>删除
+                                                        </td>
+                                                        <td></td>
+                                                        <td>commodity:index:del</td>
+                                                        <td><span class="label  label-warning">功能</span> </td>
+                                                        <td>正常</td>
+                                                        <td>0</td>
+                                                        <td><a href="javascript:;" func="btnEditFun" data-id="9908"
+                                                                class="btn btn-success btn-xs" data-type="5"><i
+                                                                    class="fa fa-edit"></i> 编辑</a>&nbsp;<a
+                                                                href="javascript:;" func="delFun" data-id="9908"
+                                                                class="btn btn-danger btn-xs"><i
+                                                                    class="fa fa-trash-o"></i> 删除</a></td>
+                                                    </tr>
+                                                    <tr id="9909" pid="20" class="20" previd="9908" islastone="true"
+                                                        depth="3">
+                                                        <td><span class="prev_sp"><span
+                                                                    class="default_node default_vertline"></span><span
+                                                                    class="default_node default_vertline"></span></span><span
+                                                                arrow="true"
+                                                                class="default_node default_last_leaf"></span>批量删除</td>
+                                                        <td></td>
+                                                        <td>commodity:index:batchDel</td>
+                                                        <td><span class="label  label-warning">功能</span> </td>
+                                                        <td>正常</td>
+                                                        <td>0</td>
+                                                        <td><a href="javascript:;" func="btnEditFun" data-id="9909"
+                                                                class="btn btn-success btn-xs" data-type="5"><i
+                                                                    class="fa fa-edit"></i> 编辑</a>&nbsp;<a
+                                                                href="javascript:;" func="delFun" data-id="9909"
+                                                                class="btn btn-danger btn-xs"><i
+                                                                    class="fa fa-trash-o"></i> 删除</a></td>
+                                                    </tr>
+                                                    <tr id="21" pid="19" class="19" previd="20" depth="2">
+                                                        <td><span class="prev_sp"><span
+                                                                    class="default_node default_vertline"></span></span><span
+                                                                arrow="true"
+                                                                class="default_node default_leaf"></span>入库管理</td>
+                                                        <td>/commodity/storage</td>
+                                                        <td>commodity_storage</td>
+                                                        <td><span class="label label-primary">菜单</span> </td>
+                                                        <td>正常</td>
+                                                        <td>2</td>
+                                                        <td><a href="javascript:;" func="btnEdit" data-id="21"
+                                                                class="btn btn-success btn-xs" data-type="2"><i
+                                                                    class="fa fa-edit"></i> 编辑</a>&nbsp;<a
+                                                                href="javascript:;" func="btnAddFun" data-id="21"
+                                                                class="btn btn-warning btn-xs" data-type="4"
+                                                                data-name="入库管理"><i class="fa fa-plus"></i>
+                                                                添加按钮</a>&nbsp;<a href="javascript:;" func="del"
+                                                                data-id="21" class="btn btn-danger btn-xs"><i
+                                                                    class="fa fa-trash-o"></i> 删除</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="24" pid="19" class="19" previd="21" depth="2">
+                                                        <td><span class="prev_sp"><span
+                                                                    class="default_node default_vertline"></span></span><span
+                                                                arrow="true"
+                                                                class="default_node default_leaf"></span>出库管理</td>
+                                                        <td>/commodity/outstock</td>
+                                                        <td>outstock</td>
+                                                        <td><span class="label label-primary">菜单</span> </td>
+                                                        <td>正常</td>
+                                                        <td>3</td>
+                                                        <td><a href="javascript:;" func="btnEdit" data-id="24"
+                                                                class="btn btn-success btn-xs" data-type="2"><i
+                                                                    class="fa fa-edit"></i> 编辑</a>&nbsp;<a
+                                                                href="javascript:;" func="btnAddFun" data-id="24"
+                                                                class="btn btn-warning btn-xs" data-type="4"
+                                                                data-name="出库管理"><i class="fa fa-plus"></i>
+                                                                添加按钮</a>&nbsp;<a href="javascript:;" func="del"
+                                                                data-id="24" class="btn btn-danger btn-xs"><i
+                                                                    class="fa fa-trash-o"></i> 删除</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="25" pid="19" class="19" previd="24" islastone="true"
+                                                        depth="2">
+                                                        <td><span class="prev_sp"><span
+                                                                    class="default_node default_vertline"></span></span><span
+                                                                arrow="true"
+                                                                class="default_node default_last_leaf"></span>库存管理</td>
+                                                        <td>/commodity/stock</td>
+                                                        <td>stock</td>
+                                                        <td><span class="label label-primary">菜单</span> </td>
+                                                        <td>正常</td>
+                                                        <td>4</td>
+                                                        <td><a href="javascript:;" func="btnEdit" data-id="25"
+                                                                class="btn btn-success btn-xs" data-type="2"><i
+                                                                    class="fa fa-edit"></i> 编辑</a>&nbsp;<a
+                                                                href="javascript:;" func="btnAddFun" data-id="25"
+                                                                class="btn btn-warning btn-xs" data-type="4"
+                                                                data-name="库存管理"><i class="fa fa-plus"></i>
+                                                                添加按钮</a>&nbsp;<a href="javascript:;" func="del"
+                                                                data-id="25" class="btn btn-danger btn-xs"><i
+                                                                    class="fa fa-trash-o"></i> 删除</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="26" haschild="true" previd="19" depth="1">
+                                                        <td><span class="prev_sp"></span><span arrow="true"
+                                                                class="default_active_node default_open"></span> 活动管理
+                                                        </td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td> <span class="label label-success">目录</span> </td>
+                                                        <td>正常</td>
+                                                        <td>5</td>
+                                                        <td><a href="javascript:;" func="btnEdit" data-id="26"
+                                                                class="btn btn-success btn-xs" data-type="2"><i
+                                                                    class="fa fa-edit"></i> 编辑</a>&nbsp;<a
+                                                                href="javascript:;" func="btnAddSub" data-id="26"
+                                                                class="btn btn-primary btn-xs" data-type="3"
+                                                                data-name=" 活动管理"><i class="fa fa-plus"></i>
+                                                                添加子类</a>&nbsp;<a href="javascript:;" func="del"
+                                                                data-id="26" class="btn btn-danger btn-xs"><i
+                                                                    class="fa fa-trash-o"></i> 删除</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="28" pid="26" class="26" isfirstone="true" islastone="true"
+                                                        depth="2">
+                                                        <td><span class="prev_sp"><span
+                                                                    class="default_node default_vertline"></span></span><span
+                                                                arrow="true"
+                                                                class="default_node default_last_leaf"></span>活动列表</td>
+                                                        <td>/activity/list</td>
+                                                        <td></td>
+                                                        <td><span class="label label-primary">菜单</span> </td>
+                                                        <td>正常</td>
+                                                        <td>1</td>
+                                                        <td><a href="javascript:;" func="btnEdit" data-id="28"
+                                                                class="btn btn-success btn-xs" data-type="2"><i
+                                                                    class="fa fa-edit"></i> 编辑</a>&nbsp;<a
+                                                                href="javascript:;" func="btnAddFun" data-id="28"
+                                                                class="btn btn-warning btn-xs" data-type="4"
+                                                                data-name="活动列表"><i class="fa fa-plus"></i>
+                                                                添加按钮</a>&nbsp;<a href="javascript:;" func="del"
+                                                                data-id="28" class="btn btn-danger btn-xs"><i
+                                                                    class="fa fa-trash-o"></i> 删除</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="15" haschild="true" previd="26" islastone="true" depth="1">
+                                                        <td><span class="prev_sp"></span><span arrow="true"
+                                                                class="default_active_node default_last_open"></span>权限管理
+                                                        </td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td> <span class="label label-success">目录</span> </td>
+                                                        <td>正常</td>
+                                                        <td>10</td>
+                                                        <td><a href="javascript:;" func="btnEdit" data-id="15"
+                                                                class="btn btn-success btn-xs" data-type="2"><i
+                                                                    class="fa fa-edit"></i> 编辑</a>&nbsp;<a
+                                                                href="javascript:;" func="btnAddSub" data-id="15"
+                                                                class="btn btn-primary btn-xs" data-type="3"
+                                                                data-name="权限管理"><i class="fa fa-plus"></i>
+                                                                添加子类</a>&nbsp;<a href="javascript:;" func="del"
+                                                                data-id="15" class="btn btn-danger btn-xs"><i
+                                                                    class="fa fa-trash-o"></i> 删除</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="16" pid="15" class="15" isfirstone="true" depth="2">
+                                                        <td><span class="prev_sp"><span
+                                                                    class="default_node default_blank"></span></span><span
+                                                                arrow="true"
+                                                                class="default_node default_leaf"></span>用户管理</td>
+                                                        <td>/system/userList</td>
+                                                        <td>userList</td>
+                                                        <td><span class="label label-primary">菜单</span> </td>
+                                                        <td>正常</td>
+                                                        <td>1</td>
+                                                        <td><a href="javascript:;" func="btnEdit" data-id="16"
+                                                                class="btn btn-success btn-xs" data-type="2"><i
+                                                                    class="fa fa-edit"></i> 编辑</a>&nbsp;<a
+                                                                href="javascript:;" func="btnAddFun" data-id="16"
+                                                                class="btn btn-warning btn-xs" data-type="4"
+                                                                data-name="用户管理"><i class="fa fa-plus"></i>
+                                                                添加按钮</a>&nbsp;<a href="javascript:;" func="del"
+                                                                data-id="16" class="btn btn-danger btn-xs"><i
+                                                                    class="fa fa-trash-o"></i> 删除</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="17" pid="15" class="15" haschild="true" previd="16"
+                                                        depth="2">
+                                                        <td><span class="prev_sp"><span
+                                                                    class="default_node default_blank"></span></span><span
+                                                                arrow="true"
+                                                                class="default_active_node default_open"></span>角色管理
+                                                        </td>
+                                                        <td>/system/roleList</td>
+                                                        <td>roleList</td>
+                                                        <td><span class="label label-primary">菜单</span> </td>
+                                                        <td>正常</td>
+                                                        <td>2</td>
+                                                        <td><a href="javascript:;" func="btnEdit" data-id="17"
+                                                                class="btn btn-success btn-xs" data-type="2"><i
+                                                                    class="fa fa-edit"></i> 编辑</a>&nbsp;<a
+                                                                href="javascript:;" func="btnAddFun" data-id="17"
+                                                                class="btn btn-warning btn-xs" data-type="4"
+                                                                data-name="角色管理"><i class="fa fa-plus"></i>
+                                                                添加按钮</a>&nbsp;<a href="javascript:;" func="del"
+                                                                data-id="17" class="btn btn-danger btn-xs"><i
+                                                                    class="fa fa-trash-o"></i> 删除</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="9901" pid="17" class="17" isfirstone="true" depth="3">
+                                                        <td><span class="prev_sp"><span
+                                                                    class="default_node default_blank"></span><span
+                                                                    class="default_node default_vertline"></span></span><span
+                                                                arrow="true" class="default_node default_leaf"></span>添加
+                                                        </td>
+                                                        <td></td>
+                                                        <td>add11</td>
+                                                        <td><span class="label  label-warning">功能</span> </td>
+                                                        <td>正常</td>
+                                                        <td>0</td>
+                                                        <td><a href="javascript:;" func="btnEditFun" data-id="9901"
+                                                                class="btn btn-success btn-xs" data-type="5"><i
+                                                                    class="fa fa-edit"></i> 编辑</a>&nbsp;<a
+                                                                href="javascript:;" func="delFun" data-id="9901"
+                                                                class="btn btn-danger btn-xs"><i
+                                                                    class="fa fa-trash-o"></i> 删除</a></td>
+                                                    </tr>
+                                                    <tr id="9903" pid="17" class="17" previd="9901" islastone="true"
+                                                        depth="3">
+                                                        <td><span class="prev_sp"><span
+                                                                    class="default_node default_blank"></span><span
+                                                                    class="default_node default_vertline"></span></span><span
+                                                                arrow="true"
+                                                                class="default_node default_last_leaf"></span>查看</td>
+                                                        <td></td>
+                                                        <td>view</td>
+                                                        <td><span class="label  label-warning">功能</span> </td>
+                                                        <td>正常</td>
+                                                        <td>0</td>
+                                                        <td><a href="javascript:;" func="btnEditFun" data-id="9903"
+                                                                class="btn btn-success btn-xs" data-type="5"><i
+                                                                    class="fa fa-edit"></i> 编辑</a>&nbsp;<a
+                                                                href="javascript:;" func="delFun" data-id="9903"
+                                                                class="btn btn-danger btn-xs"><i
+                                                                    class="fa fa-trash-o"></i> 删除</a></td>
+                                                    </tr>
+                                                    <tr id="18" pid="15" class="15" previd="17" depth="2">
+                                                        <td><span class="prev_sp"><span
+                                                                    class="default_node default_blank"></span></span><span
+                                                                arrow="true"
+                                                                class="default_node default_leaf"></span>系统资源</td>
+                                                        <td>/system/resourceList</td>
+                                                        <td>resourceList</td>
+                                                        <td><span class="label label-primary">菜单</span> </td>
+                                                        <td>正常</td>
+                                                        <td>3</td>
+                                                        <td><a href="javascript:;" func="btnEdit" data-id="18"
+                                                                class="btn btn-success btn-xs" data-type="2"><i
+                                                                    class="fa fa-edit"></i> 编辑</a>&nbsp;<a
+                                                                href="javascript:;" func="btnAddFun" data-id="18"
+                                                                class="btn btn-warning btn-xs" data-type="4"
+                                                                data-name="系统资源"><i class="fa fa-plus"></i>
+                                                                添加按钮</a>&nbsp;<a href="javascript:;" func="del"
+                                                                data-id="18" class="btn btn-danger btn-xs"><i
+                                                                    class="fa fa-trash-o"></i> 删除</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="23" pid="15" class="15" previd="18" depth="2">
+                                                        <td><span class="prev_sp"><span
+                                                                    class="default_node default_blank"></span></span><span
+                                                                arrow="true"
+                                                                class="default_node default_leaf"></span>监控中心</td>
+                                                        <td>/druid/</td>
+                                                        <td>druid</td>
+                                                        <td><span class="label label-primary">菜单</span> </td>
+                                                        <td>正常</td>
+                                                        <td>4</td>
+                                                        <td><a href="javascript:;" func="btnEdit" data-id="23"
+                                                                class="btn btn-success btn-xs" data-type="2"><i
+                                                                    class="fa fa-edit"></i> 编辑</a>&nbsp;<a
+                                                                href="javascript:;" func="btnAddFun" data-id="23"
+                                                                class="btn btn-warning btn-xs" data-type="4"
+                                                                data-name="监控中心"><i class="fa fa-plus"></i>
+                                                                添加按钮</a>&nbsp;<a href="javascript:;" func="del"
+                                                                data-id="23" class="btn btn-danger btn-xs"><i
+                                                                    class="fa fa-trash-o"></i> 删除</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="29" pid="15" class="15" previd="23" islastone="true"
+                                                        depth="2">
+                                                        <td><span class="prev_sp"><span
+                                                                    class="default_node default_blank"></span></span><span
+                                                                arrow="true"
+                                                                class="default_node default_last_leaf"></span>APP管理
+                                                        </td>
+                                                        <td>/app/index</td>
+                                                        <td>app</td>
+                                                        <td><span class="label label-primary">菜单</span> </td>
+                                                        <td>正常</td>
+                                                        <td>5</td>
+                                                        <td><a href="javascript:;" func="btnEdit" data-id="29"
+                                                                class="btn btn-success btn-xs" data-type="2"><i
+                                                                    class="fa fa-edit"></i> 编辑</a>&nbsp;<a
+                                                                href="javascript:;" func="btnAddFun" data-id="29"
+                                                                class="btn btn-warning btn-xs" data-type="4"
+                                                                data-name="APP管理"><i class="fa fa-plus"></i>
+                                                                添加按钮</a>&nbsp;<a href="javascript:;" func="del"
+                                                                data-id="29" class="btn btn-danger btn-xs"><i
+                                                                    class="fa fa-trash-o"></i> 删除</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <div class="dataTables_info" id="datalist_info" role="status"
+                                                        aria-live="polite">显示第 1 至 1 项结果，共 1 项</div>
+                                                </div>
+                                                <div class="col-sm-7">
+                                                    <div class="dataTables_paginate paging_simple_numbers"
+                                                        id="datalist_paginate">
+                                                        <ul class="pagination">
+                                                            <li class="paginate_button previous disabled"
+                                                                id="datalist_previous">
+                                                                <a href="#" aria-controls="datalist" data-dt-idx="0"
+                                                                    tabindex="0">上页</a>
+                                                            </li>
+                                                            <li class="paginate_button active">
+                                                                <a href="#" aria-controls="datalist" data-dt-idx="1"
+                                                                    tabindex="0">1</a>
+                                                            </li>
+                                                            <li class="paginate_button next disabled"
+                                                                id="datalist_next">
+                                                                <a href="#" aria-controls="datalist" data-dt-idx="2"
+                                                                    tabindex="0">下页</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </section>
@@ -1022,6 +1173,7 @@
     <!-- ./wrapper -->
     <!-- jQuery 3 -->
     <script src="../../static/bower_components/jquery/dist/jquery.min.js"></script>
+    <!--[if (IE 8)|(IE 9)]><script src="https://cdn.bootcss.com/jquery/1.10.0/jquery.min.js"><![endif]-->
     <!-- jQuery UI 1.11.4 -->
     <script src="../../static/bower_components/jquery-ui/jquery-ui.min.js"></script>
     <!-- Bootstrap 3.3.7 -->
@@ -1050,17 +1202,23 @@
     <!-- AdminLTE App -->
     <script src="../../static/dist/js/adminlte.min.js"></script>
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    <script src="../../static/dist/js/pages/dashboard.js"></script>
+    <!-- <script src="../../static/dist/js/pages/dashboard.js"></script> -->
     <!-- AdminLTE for demo purposes -->
-    <script src="../../static/dist/js/demo.js"></script>
+    <!-- <script src="../../static/dist/js/demo.js"></script> -->
 
-    <script src="../../static/dist/js/app.js"></script>
+    <!-- <script src="../../static/dist/js/app.js"></script> -->
+    <script src="../../static/dist/js/scroll.js"></script>
 
     <script>
         $(function () {
-            var contentH = document.body.clientHeight;
-            console.log(contentH)
-            $(".content_newWrapper").height(contentH - 106);
+            var siderH = $(".main-sidebar").height();
+            var contentH = siderH - 87 - 48;
+            var content = $(".content").height();
+            $(".middle_bg").height(contentH);
+            $(".middle_bg").css({
+                "overflow-x": "hidden"
+            })
+            $('.middle_bg').perfectScrollbar();
         })
     </script>
 
@@ -1134,13 +1292,12 @@
     </script>
 
 
-    <script type="text/javascript" charset="utf-8" src="../../static/plugins/ValidForm/Validform_v5.3.2.js"></script>
-    <script type="text/javascript" charset="utf-8" src="../../static/plugins/WebUploader/webuploader.min.js"></script>
+    <!-- <script type="text/javascript" charset="utf-8" src="../../static/plugins/ValidForm/Validform_v5.3.2.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../../static/plugins/WebUploader/webuploader.min.js"></script> -->
 
-    <script type="text/javascript" charset="utf-8"
-        src="../../static/plugins/jquery.treetable/jquery.treeTable.min.js"></script>
+    <!-- <script type="text/javascript" charset="utf-8" src="../../static/plugins/jquery.treetable/jquery.treeTable.min.js"></script> -->
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         $(document).ready(function () {
             // loadCategorys();
 
@@ -1410,7 +1567,7 @@
         //         }
         //     });
         // }
-    </script>
+    </script> -->
 
 
 

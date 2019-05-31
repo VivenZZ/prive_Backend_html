@@ -90,7 +90,7 @@
             <section class="sidebar" style="height: auto;">
                 <ul class="sidebar-menu tree" data-widget="tree" id="menu">
                     <li class="treeview notree">
-                        <a href="#">
+                        <a href="javascript:;">
                             <span>基本信息设置</span>
                         </a>
                         <ul class="treeview-menu">
@@ -103,7 +103,7 @@
                             <li class=""><a href="../../templates/brand/index.html">品牌管理</a></li>
                         </ul>
                     </li>
-                    <li class="treeview"> <a href="#">
+                    <li class="treeview"> <a  href="javascript:;">
                             <span>供应商管理</span>
                         </a>
                         <ul class="treeview-menu">
@@ -193,7 +193,7 @@
                                         <a href="javascript:;" func="btnAdd" class="btn btn-default btn-sm"><i
                                                 class="fa fa-plus"></i>&nbsp;新
                                             增</a>
-                                        <a href="javascript:;" func="btnBatchDelete" class="btn btn-default btn-sm"><i
+                                        <a href="javascript:;" func="btnBatchDelete" class="btn-default-del btn btn-default btn-sm"><i
                                                 class="fa fa-trash-o"></i>&nbsp;批量删除</a>
                                     </div>
                                 </div>
@@ -386,6 +386,7 @@
     <!-- ./wrapper -->
     <!-- jQuery 3 -->
     <script src="../../static/bower_components/jquery/dist/jquery.min.js"></script>
+    <!--[if (IE 8)|(IE 9)]><script src="https://cdn.bootcss.com/jquery/1.10.0/jquery.min.js"><![endif]-->
     <!-- jQuery UI 1.11.4 -->
     <script src="../../static/bower_components/jquery-ui/jquery-ui.min.js"></script>
     <!-- Bootstrap 3.3.7 -->
@@ -411,18 +412,50 @@
     <script src="../../static/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
     <!-- FastClick -->
     <script src="../../static/bower_components/fastclick/lib/fastclick.js"></script>
+    <script>
+        var DEFAULT_VERSION = 8.0;  
+            var ua = navigator.userAgent.toLowerCase();  
+            var isIE = ua.indexOf("msie")>-1;  
+            var safariVersion;  
+            if(isIE){  
+                safariVersion =  ua.match(/msie ([\d.]+)/)[1];  
+            }  
+            if(safariVersion <= DEFAULT_VERSION ){  
+                console.log('系统检测到您正在使用ie8以下内核的浏览器，不能实现完美体验，请更换或升级浏览器访问！')
+            } else {
+                console.log('加载js')
+                
+                var script = document.createElement('script');
+                script.type = 'text/javascript';
+                script.src = '../../static/dist/js/adminlte.min.js'; //填自己的js路径
+                document.body.appendChild(script);
+                var script1 = document.createElement('script');
+                script1.type = 'text/javascript';
+                script1.src = '../../static/dist/js/pages/dashboard.js'; //填自己的js路径
+                document.body.appendChild(script1);
+                var script2 = document.createElement('script');
+                script2.type = 'text/javascript';
+                script2.src = '../../static/dist/js/demo.js'; //填自己的js路径
+                document.body.appendChild(script2);
+            }; 
+    </script>
     <!-- AdminLTE App -->
-    <script src="../../static/dist/js/adminlte.min.js"></script>
+    <!-- <script src="../../static/dist/js/adminlte.min.js"></script> -->
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    <script src="../../static/dist/js/pages/dashboard.js"></script>
+    <!-- <script src="../../static/dist/js/pages/dashboard.js"></script> -->
     <!-- AdminLTE for demo purposes -->
-    <script src="../../static/dist/js/demo.js"></script>
+    <!-- <script src="../../static/dist/js/demo.js"></script> -->
 
     <script src="../../static/dist/js/app.js"></script>
     <script>
         $(function () {
-            var contentH = $(window).height();
-            $(".content_newWrapper").height(contentH - 66);
+            var siderH = $(".main-sidebar").height();
+            var contentH = siderH - 87 - 48;
+            var content = $(".content").height();
+            $(".middle_bg").height(contentH);
+            $(".middle_bg").css({
+                "overflow-x": "hidden"
+            })
         })
     </script>
 
