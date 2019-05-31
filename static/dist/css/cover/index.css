@@ -195,7 +195,7 @@ body {
 }
 
 .skin-blue .main-sidebar {
-	z-index: 998;
+	z-index: 9999;
 	position: fixed;
 }
 
@@ -204,10 +204,11 @@ body {
 }
 
 .main-sidebar {
-	padding-top: 77px;
-	margin-left: 13px;
-	margin-right: 15px;
-	width: 160px;
+	margin-top: 77px;
+    padding-top: 0;
+    margin-left: 13px;
+    margin-right: 15px;
+    width: 160px;
 }
 
 .sidebar-menu > li {
