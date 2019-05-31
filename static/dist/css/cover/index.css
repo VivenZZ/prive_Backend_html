@@ -803,8 +803,12 @@ div.dataTables_wrapper div.dataTables_info{
 .fa:before{
 	content: ''
 }
+.pull-left{
+	width: 70%;
+}
 .pull-left .form-group{
 	float: left;
+	margin-bottom: 20px;
 }
 .dataTables_paginate{
 	text-align: right;
@@ -850,4 +854,9 @@ div.dataTables_wrapper div.dataTables_info{
 	color: #FFFFFF;
 	letter-spacing: 1.2px;
 	margin-left: 10px;
+}
+.input-group .input-group-addon{
+	border-color: #62C1F9;
+    background-color: #273a60;
+    color: #62C1F9;
 }
