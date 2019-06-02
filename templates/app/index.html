@@ -445,6 +445,7 @@
 
     <script>
         $(function () {
+            var windowW = $(window).width()
             var siderH = $(".main-sidebar").height();
             var contentH = siderH  - 69 - 48 -87;
             var content = $(".content").height();
@@ -453,6 +454,15 @@
                 "overflow-x": "hidden"
             })
             $('.middle_bg').perfectScrollbar();
+            if (windowW < 1366) {
+                $("body").css({
+                    "overflow-x": "scroll"
+                })
+            } else {
+                $("body").css({
+                    "overflow-x": "hidden"
+                })
+            }
         })
     </script>
 
