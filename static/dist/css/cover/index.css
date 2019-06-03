@@ -194,14 +194,20 @@ body {
 	overflow-y: hidden;
 }
 
-.skin-blue .main-sidebar {
-	z-index: 9999;
-	position: fixed;
-}
-
 .skin-blue .wrapper, .skin-blue .main-sidebar, .skin-blue .left-side {
 	background: rgba(0,0,0,0);
 	background-color: #222d32\9;
+}
+
+.skin-blue .main-sidebar {
+	z-index: 9999;
+	position: fixed;
+	background-color: #222d32\9;
+	background: -moz-linear-gradient( top,#320e32,#132632);
+	background: -webkit-linear-gradient( top,#320e32,#132632);
+	background: -o-linear-gradient( top,#320e32,#132632);
+	background: -ms-linear-gradient( top,#320e32,#132632);
+	background: linear-gradient( top,#320e32,#132632);
 }
 
 .main-sidebar {
