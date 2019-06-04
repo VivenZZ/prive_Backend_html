@@ -76,7 +76,7 @@
     </style>
 </head>
 
-<body class="skin-blue sidebar-mini" style="height: auto; min-height: 100%;">
+<body class="skin-blue sidebar-mini fixed" style="height: auto; min-height: 100%;">
 
     <div class="wrapper" style="height: auto; min-height: 100%;">
         <header class="new_header new_header_fixed">
@@ -157,6 +157,91 @@
                             </li>
                         </ul>
                     </li>
+                    <li class="treeview active menu-open"> <a href="#">
+                            <span>权限管理</span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li class=""><a href="../../static/system/userList">用户管理</a>
+                            </li>
+                            <li class=""><a href="../../static/system/roleList">角色管理</a>
+                            </li>
+                            <li class=""><a href="../../templates/system/res.html">系统资源</a></li>
+                            <li class=""><a href="../../static/druid/">监控中心</a></li>
+                            <li class="active"><a href="../../static/app/index">APP管理</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="treeview active menu-open"> <a href="#">
+                            <span>权限管理</span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li class=""><a href="../../static/system/userList">用户管理</a>
+                            </li>
+                            <li class=""><a href="../../static/system/roleList">角色管理</a>
+                            </li>
+                            <li class=""><a href="../../templates/system/res.html">系统资源</a></li>
+                            <li class=""><a href="../../static/druid/">监控中心</a></li>
+                            <li class="active"><a href="../../static/app/index">APP管理</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="treeview active menu-open"> <a href="#">
+                            <span>权限管理</span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li class=""><a href="../../static/system/userList">用户管理</a>
+                            </li>
+                            <li class=""><a href="../../static/system/roleList">角色管理</a>
+                            </li>
+                            <li class=""><a href="../../templates/system/res.html">系统资源</a></li>
+                            <li class=""><a href="../../static/druid/">监控中心</a></li>
+                            <li class="active"><a href="../../static/app/index">APP管理</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="treeview active menu-open"> <a href="#">
+                            <span>权限管理</span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li class=""><a href="../../static/system/userList">用户管理</a>
+                            </li>
+                            <li class=""><a href="../../static/system/roleList">角色管理</a>
+                            </li>
+                            <li class=""><a href="../../templates/system/res.html">系统资源</a></li>
+                            <li class=""><a href="../../static/druid/">监控中心</a></li>
+                            <li class="active"><a href="../../static/app/index">APP管理</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="treeview active menu-open"> <a href="#">
+                            <span>权限管理</span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li class=""><a href="../../static/system/userList">用户管理</a>
+                            </li>
+                            <li class=""><a href="../../static/system/roleList">角色管理</a>
+                            </li>
+                            <li class=""><a href="../../templates/system/res.html">系统资源</a></li>
+                            <li class=""><a href="../../static/druid/">监控中心</a></li>
+                            <li class="active"><a href="../../static/app/index">APP管理</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="treeview active menu-open"> <a href="#">
+                            <span>权限管理</span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li class=""><a href="../../static/system/userList">用户管理</a>
+                            </li>
+                            <li class=""><a href="../../static/system/roleList">角色管理</a>
+                            </li>
+                            <li class=""><a href="../../templates/system/res.html">系统资源</a></li>
+                            <li class=""><a href="../../static/druid/">监控中心</a></li>
+                            <li class="active"><a href="../../static/app/index">APP管理</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
                 </ul>
             </section>
             <!-- /.sidebar -->
@@ -366,6 +451,7 @@
     <script type="text/javascript" charset="utf-8" src="../../static/plugins/WebUploader/webuploader.min.js"></script>
     <script src="../../static/plugins/datePicker/laydate.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/4.2.1/echarts-en.common.js"></script>
+    <script src="../../static/dist/js/scroll.js"></script>
     <script type="text/javascript">
         $(function () {
             // 日期选择器  http://www.jq22.com/jquery-info1059 文档地址
@@ -384,6 +470,7 @@
 
 
             // 第一个高度控制
+            var windowH = $(window).height();
             var windowW = $(window).width()
             var boxH = $(window).height();
             var innerHeight = boxH - 150 - 76
@@ -400,6 +487,16 @@
                     "overflow-x": "hidden"
                 })
             }
+            setTimeout(function(){
+                console.log(windowH)
+                $('.slimScrollDiv').height(windowH - 77)
+                $('.slimScrollDiv').css({
+                    "overflow-y": "scroll"
+                })
+                $('.slimScrollDiv').perfectScrollbar({
+			        cursorwidth: 0
+                });
+            },0)
 
             var myChart1 = echarts.init(document.getElementById('main1'), 'dark');
             var option1 = {
