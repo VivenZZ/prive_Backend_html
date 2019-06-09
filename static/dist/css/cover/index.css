@@ -17,23 +17,24 @@
 }
 
 .login-logo {
-	margin-bottom: 66px;
+	margin-bottom: 46px;
 }
 
 .login-logo a, .register-logo a {
 	font-family: PingFang-SC-Bold;
-	font-size: 38px;
+	font-size: 26px;
 	color: #62C1F9;
-	letter-spacing: 3.8px;
+	letter-spacing: 2.6px;
 	text-align: center;
 }
 
 .login-box-msg, .register-box-msg {
-	font-family: PingFang-SC-Bold;
-	font-size: 26px;
+	font-family: ArialMT;
+	font-size: 18px;
 	color: #62C1F9;
-	letter-spacing: 0;
+	letter-spacing: 0.2px;
 	text-align: center;
+	padding-bottom: 14px;
 }
 
 .login-logo i {
@@ -47,58 +48,57 @@
 }
 
 .login-box-body {
-	width: 530px;
+	width: 398px;
 	background: rgba(31,101,192,0.10);
 	border: 1px solid #0696D7;
 	box-shadow: 0 4px 16px 0 rgba(11,3,6,0.75), inset 0 0 20px 0 rgba(98,193,249,0.50);
-	padding: 45px 60px 60px;
+	padding: 32px 45px 45px;
 }
 
 .login-box .form-control {
-	height: 46px;
-	line-height: 46px;
+	height: 37px;
+	line-height: 37px;
 	background: #0F3D75;
 	border: 3px solid #1D64C0;
 	font-family: PingFang-SC-Bold;
-	font-size: 18px;
+	font-size: 14px;
 	color: #62C1F9;
 	letter-spacing: 0;
 	text-align: left;
-	text-indent: 46px;
+	text-indent: 36px;
 }
-
 .login-box .form-control::-webkit-input-placeholder {
  /* WebKit browsers */
-	font-size: 18px;
+	font-size: 14px;
 	color: #62C1F9;
 }
 
 .login-box .form-control::-moz-placeholder {
  /* Mozilla Firefox 19+ */
-	font-size: 18px;
+	font-size: 14px;
 	color: #62C1F9;
 }
 
 .login-box .form-control:-ms-input-placeholder {
  /* Internet Explorer 10+ */
-	font-size: 18px;
+	font-size: 14px;
 	color: #62C1F9;
 }
 
 .login-box .form-group {
-	margin-bottom: 24px;
+	margin-bottom: 18px;
 }
 
 .btn.btn-flat {
-	height: 50px;
+	height: 38px;
 	background: #27AAFC;
 	border: 1px solid #0696D7;
 	font-family: PingFang-SC-Bold;
-	font-size: 20px;
+	font-size: 14px;
 	color: #FFFFFF;
 	letter-spacing: 0;
 	text-align: center;
-	margin-top: 43px;
+	margin-top: 32px;
 }
 
 .login-box .form-control-feedback {
@@ -107,8 +107,8 @@
 }
 
 .login-box .glyphicon-lock, .login-box .glyphicon-envelope {
-	width: 20px;
-	height: 23px;
+	width: 15px;
+	height: 17px;
 	top: 50%;
 	left: 20px;
 	transform: translateY(-50%);
