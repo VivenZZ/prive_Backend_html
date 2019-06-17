@@ -43,7 +43,7 @@ $(function () {
         legend: {
             orient: 'vertical',
             left: 'left',
-            data: ['保安', '保洁', '维修']
+            data: ['保安', '保洁', '护工','维修', ]
         },
         series: [
             {
@@ -54,6 +54,7 @@ $(function () {
                 data: [
                     { value: 2, name: '保安' },
                     { value: 3, name: '保洁' },
+                    { value: 3, name: '护工' },
                     { value: 2, name: '维修' }
                 ],
                 label: {
@@ -68,13 +69,13 @@ $(function () {
                         shadowOffsetX: 0,
                         shadowColor: 'rgba(0, 0, 0, 0.5)'
                     },
-                    normal: {
-                        // 定制显示（按顺序）
-                        color: function (params) {
-                            var colorList = ['#6C48E5', '#F16647', '#FAB13E'];
-                            return colorList[params.dataIndex]
-                        }
-                    },
+                    // normal: {
+                    //     // 定制显示（按顺序）
+                    //     color: function (params) {
+                    //         var colorList = ['#6C48E5', '#F16647', '#FFFFFF', '#FAB13E'];
+                    //         return colorList[params.dataIndex]
+                    //     }
+                    // },
                 },
             }
         ]
@@ -459,7 +460,7 @@ $(function () {
       legend: {
           orient: 'vertical',
           left: 'left',
-          data: ['保安', '保洁', '维修']
+          data: ['保安', '保洁', '护工','维修', ]
       },
       series: [
           {
@@ -468,9 +469,10 @@ $(function () {
               radius: '55%',
               center: ['50%', '60%'],
               data: [
-                  { value: 2, name: '保安' },
-                  { value: 3, name: '保洁' },
-                  { value: 2, name: '维修' }
+                { value: 2, name: '保安' },
+                { value: 3, name: '保洁' },
+                { value: 3, name: '护工' },
+                { value: 2, name: '维修' }
               ],
               label: {
                   normal: {
@@ -484,13 +486,13 @@ $(function () {
                       shadowOffsetX: 0,
                       shadowColor: 'rgba(0, 0, 0, 0.5)'
                   },
-                  normal: {
-                      // 定制显示（按顺序）
-                      color: function (params) {
-                          var colorList = ['#6C48E5', '#F16647', '#FAB13E'];
-                          return colorList[params.dataIndex]
-                      }
-                  },
+                //   normal: {
+                //       // 定制显示（按顺序）
+                //       color: function (params) {
+                //         var colorList = ['#6C48E5', '#F16647', '#FFFFFF', '#FAB13E'];
+                //           return colorList[params.dataIndex]
+                //       }
+                //   },
               },
           }
       ]
