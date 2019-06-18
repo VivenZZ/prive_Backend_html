@@ -190,14 +190,14 @@ $(function () {
         xAxis: [
             {
                 type: 'category',
-                data: ['浙江大学', '浙江工商大学', '浙江理工大学', '中国计量大学', '杭州师范大学', '浙江理警察学校', '浙江中医药大学'],
+                data: ['浙江大学', '浙江工商大学', '浙江大学', '浙江工商大学', '浙江理工大学', '中国计量大学', '杭州师范大学',  '杭州师范大学', '浙江理警察学校', '浙江中医药大学', '浙江中医药大学', '浙江中医药大学', '浙江中医药大学', '浙江中医药大学', '浙江中医药大学', '浙江中医药大学'],
                 axisTick: {
                     alignWithLabel: true
                 },
                 axisLabel: {
                     show: true,
                     textStyle: {
-                        fontSize: 16,     //更改坐标轴文字大小
+                        fontSize: 12,     //更改坐标轴文字大小
                         lineHeight: 20,
                     },
                 }
@@ -234,7 +234,7 @@ $(function () {
                     },
                 },
                 data: (function () {
-                    var arr = [10, 52, 200, 334, 390, 330, 220]
+                    var arr = [10, 52, 200, 334, 390, 330, 220, 220, 220, 220, 220, 220, 220, 220 ,220, 220]
                     var newArr = []
                     for (var index = 0; index < arr.length; index++) {
                         newArr.push(arr[index] / 4)
