@@ -1045,3 +1045,9 @@ div.dataTables_wrapper div.dataTables_info{
 		font-size: 14px;
 	}
 }
+
+/* 修改BUG */
+/* 上传文字提示 */
+#checkinFileUrl{
+	color: #fff;
+}
