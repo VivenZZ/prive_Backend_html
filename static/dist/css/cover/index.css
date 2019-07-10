@@ -1049,5 +1049,11 @@ div.dataTables_wrapper div.dataTables_info{
 /* 修改BUG */
 /* 上传文字提示 */
 #checkinFileUrl{
-	color: #fff;
+	color: #fff !important;
+}
+.tree_table .default_node, .tree_table .default_active_node{
+	display: none !important;
+}
+.btn-primary{
+	background-color: #3c8dbc;
 }
