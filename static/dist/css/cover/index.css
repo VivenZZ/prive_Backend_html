@@ -580,7 +580,7 @@ body {
 	text-align: left;
 	padding: 15px 0;
 }
-.modal-footer .btn-primary{
+.btn-primary{
 	background: #2E3A62;
 	border: 1px solid #38E893;
 	font-family: PingFangSC-Regular;
@@ -1030,7 +1030,7 @@ div.dataTables_wrapper div.dataTables_info{
 
 
 @media screen and (max-height: 800px) {
-	.time_chiose{
+	.time_chiose{/**/
 		margin: 10px 10px;
 	}
 	.data_show .l .data_show_box2 div,
@@ -1046,14 +1046,22 @@ div.dataTables_wrapper div.dataTables_info{
 	}
 }
 
-/* 修改BUG */
-/* 上传文字提示 */
-#checkinFileUrl{
-	color: #fff !important;
+.table>tbody>tr .btn-xs{
+	height: initial;
+	margin-top: initial;
+	line-height: initial;
+	font-family: initial;
+	color: initial;
+	letter-spacing: initial;
+	text-align: initial;
 }
-.tree_table .default_node, .tree_table .default_active_node{
-	display: none !important;
+
+#checkinFileUrl{
+	color: #fff;
 }
 .btn-primary{
 	background-color: #3c8dbc;
+}
+.tree_table .default_shut, .tree_table .default_last_shut{
+	background: url(./allbgs.gif) no-repeat -18px 1px;
 }
