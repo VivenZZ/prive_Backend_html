@@ -1063,8 +1063,8 @@ div.dataTables_wrapper div.dataTables_info{
 	background-color: #3c8dbc;
 }
 .tree_table .default_shut, .tree_table .default_last_shut{
-	background: url(./allbgs.gif) no-repeat -18px 1px;
+	background: url(../../img/new/allbgs.gif) no-repeat -18px 1px;
 }
 .tree_table .default_open, .tree_table .default_last_open{
-	background: url(./allbgs.gif) no-repeat -18px 1px;
+	background: url(../../img/new/allbgs.gif) no-repeat -18px 1px;
 }
