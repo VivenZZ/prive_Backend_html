@@ -55,6 +55,8 @@
                 </div>
             </header>
             <aside class="main-sidebar">
+
+                <div class="main-sidebar_bg">
                 <section class="sidebar" style="height: auto;">
                     <ul class="sidebar-menu tree" data-widget="tree" id="menu">
                         <li class="treeview notree">
@@ -126,6 +128,7 @@
                         </li>
                     </ul>
                 </section>
+                </div>
                 <!-- /.sidebar -->
             </aside>
 
@@ -284,8 +287,14 @@
 <script src="../../static/dist/js/demo.js"></script>
 
 <script src="../../static/dist/js/app.js"></script>
+<script src="../../static/dist/js/scroll.js"></script>
 
 <script>
+
+    var scriptCom = document.createElement('script');
+    scriptCom.type = 'text/javascript';
+    scriptCom.src = '../../static/dist/js/com.js'; //填自己的js路径
+    document.body.appendChild(scriptCom);
         $(function () {
             var contentH = $(window).height();
             $(".content_newWrapper").height(contentH-106);
@@ -296,6 +305,11 @@
     $(function () {
         let currUrl= document.location.pathname;
         console.log(currUrl);
+		
+		var scriptCom = document.createElement('script');
+		scriptCom.type = 'text/javascript';
+		scriptCom.src = '../../static/dist/js/com.js'; //填自己的js路径
+		document.body.appendChild(scriptCom);
         $.ajax({
             url:"/system/resourcePage",
             type:"POST",

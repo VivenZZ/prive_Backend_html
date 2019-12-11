@@ -200,6 +200,7 @@ body {
 }
 
 .skin-blue .main-sidebar {
+	min-height: auto;
 	z-index: 9999;
 	position: fixed;
 	background-color: #222d32\9;
@@ -212,8 +213,11 @@ body {
 
 .main-sidebar {
 	margin-top: 77px;
-    padding: 0 15px 0 13px;
-    width: 190px;
+	padding: 0 15px 0 13px;
+	width: 190px;
+}
+.main-sidebar::-webkit-scrollbar {
+	display: none;
 }
 
 .sidebar-menu > li {
@@ -809,7 +813,7 @@ div.dataTables_wrapper div.dataTables_info{
 	content: ''
 }
 .pull-left{
-	width: 70%;
+	width: 62%;
 }
 .pull-left .form-group{
 	float: left;
