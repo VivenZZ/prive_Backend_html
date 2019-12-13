@@ -7,9 +7,7 @@ $(function () {
     $(".middle_bg").css({
         "overflow-x": "hidden"
     })
-    $('.middle_bg').perfectScrollbar({
-        cursorwidth: 0
-    });
+    new PerfectScrollbar('.middle_bg');
 
     if (windowW < 1366) {
         $("body").css({
@@ -25,10 +23,8 @@ $(function () {
         "overflow-x": "hidden",
         "overflow-y": "scroll"
     })
-    $('.main-sidebar_bg').perfectScrollbar({
-        cursorwidth: 0
-    });
-    //
+    new PerfectScrollbar('.main-sidebar_bg');
+    // //
     var browserInfo = getBrowserInfo();
     $(".treeview ").on('click', function () {
     
@@ -38,9 +34,7 @@ $(function () {
             $('.main-sidebar_bg').css({
                 "overflow-y": "scroll"
             })
-            $('.main-sidebar_bg').perfectScrollbar({
-                cursorwidth: 0
-            });
+            new PerfectScrollbar('.main-sidebar_bg');
         }
     });
 
